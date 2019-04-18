@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C02693523F424F0E5BC171B /* Pods_Qari_IbrahimTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0703CD12C6ECBCB514834EE /* Pods_Qari_IbrahimTests.framework */; };
+		7B0100E5225B397E0097AE47 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0100E4225B397E0097AE47 /* BioViewController.swift */; };
+		7B0100E7225B3E140097AE47 /* LiveClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0100E6225B3E140097AE47 /* LiveClassViewController.swift */; };
+		7B0100E9225B46D80097AE47 /* AskQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0100E8225B46D80097AE47 /* AskQuestionViewController.swift */; };
+		7B0100EB225B826A0097AE47 /* RequestClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0100EA225B826A0097AE47 /* RequestClassViewController.swift */; };
+		7B0100ED225B8AEE0097AE47 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0100EC225B8AEE0097AE47 /* SettingViewController.swift */; };
+		7B59CCB42254D264000E2BCF /* QaidyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59CCB32254D264000E2BCF /* QaidyViewController.swift */; };
+		7B59CCB62254DEA4000E2BCF /* QuranTahqeeqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59CCB52254DEA4000E2BCF /* QuranTahqeeqViewController.swift */; };
+		7B59CCB82254F1A0000E2BCF /* QuraanTehqeeqAudioVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59CCB72254F1A0000E2BCF /* QuraanTehqeeqAudioVideoViewController.swift */; };
+		7B59CCBA2255070D000E2BCF /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59CCB92255070D000E2BCF /* AboutUsViewController.swift */; };
+		7B59CCBC225616F1000E2BCF /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59CCBB225616F1000E2BCF /* PlayerViewController.swift */; };
+		7B59CCBE22562A22000E2BCF /* BooksPublicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59CCBD22562A22000E2BCF /* BooksPublicationViewController.swift */; };
+		7B59CCC022563ECA000E2BCF /* TasbeehViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59CCBF22563ECA000E2BCF /* TasbeehViewController.swift */; };
+		7B59CCC222565CAB000E2BCF /* OnlineClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59CCC122565CAB000E2BCF /* OnlineClassesViewController.swift */; };
+		7B6CB1F022646BC300A81289 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B6CB1F222646BC300A81289 /* Localizable.strings */; };
+		7B8E259F22635BEA00526559 /* America.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7B8E259E22635BE900526559 /* America.mp4 */; };
+		7B8E25A12263755800526559 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E25A02263755800526559 /* ShareViewController.swift */; };
+		7B8F1AD7225F7ECA00E8204A /* QaidySubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8F1AD6225F7ECA00E8204A /* QaidySubViewController.swift */; };
+		7BDE17C4225C87B400BDD6DF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDE17C3225C87B400BDD6DF /* SearchViewController.swift */; };
+		7BDE17C8225C910A00BDD6DF /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDE17C7225C910A00BDD6DF /* SearchTableViewCell.swift */; };
+		7BDE17CA225CA6DA00BDD6DF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDE17C9225CA6DA00BDD6DF /* MenuViewController.swift */; };
+		7BDE17CC225CA8AA00BDD6DF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDE17CB225CA8AA00BDD6DF /* BaseViewController.swift */; };
+		7BDE17D4225E39AD00BDD6DF /* naat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BDE17D3225E39AD00BDD6DF /* naat.mp3 */; };
+		7BE4F8E8225353640039382C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4F8E7225353640039382C /* AppDelegate.swift */; };
+		7BE4F8ED225353640039382C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4F8EB225353640039382C /* Main.storyboard */; };
+		7BE4F8EF225353650039382C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4F8EE225353650039382C /* Assets.xcassets */; };
+		7BE4F8F2225353650039382C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4F8F0225353650039382C /* LaunchScreen.storyboard */; };
+		7BE4F8FD225353650039382C /* Qari_IbrahimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4F8FC225353650039382C /* Qari_IbrahimTests.swift */; };
+		7BE4F908225353650039382C /* Qari_IbrahimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4F907225353650039382C /* Qari_IbrahimUITests.swift */; };
+		7BE4F91622535CA00039382C /* CategoryHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4F91522535CA00039382C /* CategoryHomeViewController.swift */; };
+		7BE4F91822536CB00039382C /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4F91722536CB00039382C /* NewViewController.swift */; };
+		7BE4F91A225383680039382C /* QuraanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4F919225383680039382C /* QuraanViewController.swift */; };
+		7BE4F91C22539A870039382C /* QiraatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4F91B22539A870039382C /* QiraatViewController.swift */; };
+		7BE4F91E2253A0010039382C /* TajweedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4F91D2253A0010039382C /* TajweedViewController.swift */; };
+		7BE4F9322254A1640039382C /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4F93022549F490039382C /* fonts */; };
+		7BE4F9372254A2640039382C /* CCSignLanguage W00 Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4F9362254A2640039382C /* CCSignLanguage W00 Regular.ttf */; };
+		7BE4F9392254A26B0039382C /* Gotham Rounded Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4F9382254A26B0039382C /* Gotham Rounded Bold.otf */; };
+		7BE4F93B2254A2700039382C /* sf-compact-display-medium-5864711817c30.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4F93A2254A2700039382C /* sf-compact-display-medium-5864711817c30.otf */; };
+		7BE4F93D2254A2770039382C /* SFUIText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BE4F93C2254A2770039382C /* SFUIText-Medium.ttf */; };
+		7BE4F93F2254A7F70039382C /* PublicationBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4F93E2254A7F70039382C /* PublicationBooksViewController.swift */; };
+		7BE4F9412254A8C60039382C /* PublicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4F9402254A8C60039382C /* PublicationsViewController.swift */; };
+		B31B5AC4939F5E42D42F07F9 /* Pods_Qari_Ibrahim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F245658A2CEBF70F6D711C57 /* Pods_Qari_Ibrahim.framework */; };
+		D193A0FCE687BE7153B89868 /* Pods_Qari_IbrahimUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD7A718D36E08BB43EE00B4 /* Pods_Qari_IbrahimUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BE4F8F9225353650039382C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BE4F8DC225353640039382C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BE4F8E3225353640039382C;
+			remoteInfo = "Qari Ibrahim";
+		};
+		7BE4F904225353650039382C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BE4F8DC225353640039382C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BE4F8E3225353640039382C;
+			remoteInfo = "Qari Ibrahim";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		099E50F41BF05C66D9311182 /* Pods-Qari IbrahimTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qari IbrahimTests.release.xcconfig"; path = "Target Support Files/Pods-Qari IbrahimTests/Pods-Qari IbrahimTests.release.xcconfig"; sourceTree = "<group>"; };
+		17455C7A811924ABCE5EDACE /* Pods-Qari Ibrahim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qari Ibrahim.release.xcconfig"; path = "Target Support Files/Pods-Qari Ibrahim/Pods-Qari Ibrahim.release.xcconfig"; sourceTree = "<group>"; };
+		6262F98B5ADBB3EEA50224A4 /* Pods-Qari IbrahimUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qari IbrahimUITests.debug.xcconfig"; path = "Target Support Files/Pods-Qari IbrahimUITests/Pods-Qari IbrahimUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B0100E4225B397E0097AE47 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		7B0100E6225B3E140097AE47 /* LiveClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveClassViewController.swift; sourceTree = "<group>"; };
+		7B0100E8225B46D80097AE47 /* AskQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionViewController.swift; sourceTree = "<group>"; };
+		7B0100EA225B826A0097AE47 /* RequestClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestClassViewController.swift; sourceTree = "<group>"; };
+		7B0100EC225B8AEE0097AE47 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		7B59CCB32254D264000E2BCF /* QaidyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QaidyViewController.swift; sourceTree = "<group>"; };
+		7B59CCB52254DEA4000E2BCF /* QuranTahqeeqViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranTahqeeqViewController.swift; sourceTree = "<group>"; };
+		7B59CCB72254F1A0000E2BCF /* QuraanTehqeeqAudioVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuraanTehqeeqAudioVideoViewController.swift; sourceTree = "<group>"; };
+		7B59CCB92255070D000E2BCF /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		7B59CCBB225616F1000E2BCF /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		7B59CCBD22562A22000E2BCF /* BooksPublicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksPublicationViewController.swift; sourceTree = "<group>"; };
+		7B59CCBF22563ECA000E2BCF /* TasbeehViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbeehViewController.swift; sourceTree = "<group>"; };
+		7B59CCC122565CAB000E2BCF /* OnlineClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineClassesViewController.swift; sourceTree = "<group>"; };
+		7B6CB1EC22646A9300A81289 /* ur */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ur; path = ur.lproj/Main.strings; sourceTree = "<group>"; };
+		7B6CB1ED22646A9300A81289 /* ur */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ur; path = ur.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7B6CB1F122646BC300A81289 /* ur */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ur; path = ur.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B6CB1F322646BED00A81289 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B8E259E22635BE900526559 /* America.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = America.mp4; sourceTree = "<group>"; };
+		7B8E25A02263755800526559 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		7B8F1AD6225F7ECA00E8204A /* QaidySubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QaidySubViewController.swift; sourceTree = "<group>"; };
+		7BDE17C3225C87B400BDD6DF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		7BDE17C7225C910A00BDD6DF /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		7BDE17C9225CA6DA00BDD6DF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		7BDE17CB225CA8AA00BDD6DF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7BDE17D3225E39AD00BDD6DF /* naat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = naat.mp3; sourceTree = "<group>"; };
+		7BE4F8E4225353640039382C /* Qari Ibrahim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qari Ibrahim.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE4F8E7225353640039382C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BE4F8EC225353640039382C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BE4F8EE225353650039382C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BE4F8F1225353650039382C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BE4F8F3225353650039382C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BE4F8F8225353650039382C /* Qari IbrahimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qari IbrahimTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE4F8FC225353650039382C /* Qari_IbrahimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qari_IbrahimTests.swift; sourceTree = "<group>"; };
+		7BE4F8FE225353650039382C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BE4F903225353650039382C /* Qari IbrahimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qari IbrahimUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE4F907225353650039382C /* Qari_IbrahimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qari_IbrahimUITests.swift; sourceTree = "<group>"; };
+		7BE4F909225353650039382C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BE4F91522535CA00039382C /* CategoryHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHomeViewController.swift; sourceTree = "<group>"; };
+		7BE4F91722536CB00039382C /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		7BE4F919225383680039382C /* QuraanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuraanViewController.swift; sourceTree = "<group>"; };
+		7BE4F91B22539A870039382C /* QiraatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiraatViewController.swift; sourceTree = "<group>"; };
+		7BE4F91D2253A0010039382C /* TajweedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TajweedViewController.swift; sourceTree = "<group>"; };
+		7BE4F93022549F490039382C /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = SOURCE_ROOT; };
+		7BE4F9362254A2640039382C /* CCSignLanguage W00 Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CCSignLanguage W00 Regular.ttf"; sourceTree = "<group>"; };
+		7BE4F9382254A26B0039382C /* Gotham Rounded Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Rounded Bold.otf"; sourceTree = "<group>"; };
+		7BE4F93A2254A2700039382C /* sf-compact-display-medium-5864711817c30.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sf-compact-display-medium-5864711817c30.otf"; sourceTree = "<group>"; };
+		7BE4F93C2254A2770039382C /* SFUIText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.ttf"; sourceTree = "<group>"; };
+		7BE4F93E2254A7F70039382C /* PublicationBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationBooksViewController.swift; sourceTree = "<group>"; };
+		7BE4F9402254A8C60039382C /* PublicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationsViewController.swift; sourceTree = "<group>"; };
+		8A41C7EF6EBE03EDA30E2A1B /* Pods-Qari Ibrahim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qari Ibrahim.debug.xcconfig"; path = "Target Support Files/Pods-Qari Ibrahim/Pods-Qari Ibrahim.debug.xcconfig"; sourceTree = "<group>"; };
+		97F0D7350DC661AECF8F1660 /* Pods-Qari IbrahimTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qari IbrahimTests.debug.xcconfig"; path = "Target Support Files/Pods-Qari IbrahimTests/Pods-Qari IbrahimTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CE21D879763F00E69059FEE /* Pods-Qari IbrahimUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qari IbrahimUITests.release.xcconfig"; path = "Target Support Files/Pods-Qari IbrahimUITests/Pods-Qari IbrahimUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CAD7A718D36E08BB43EE00B4 /* Pods_Qari_IbrahimUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qari_IbrahimUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0703CD12C6ECBCB514834EE /* Pods_Qari_IbrahimTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qari_IbrahimTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F245658A2CEBF70F6D711C57 /* Pods_Qari_Ibrahim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qari_Ibrahim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BE4F8E1225353640039382C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31B5AC4939F5E42D42F07F9 /* Pods_Qari_Ibrahim.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE4F8F5225353650039382C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C02693523F424F0E5BC171B /* Pods_Qari_IbrahimTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE4F900225353650039382C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D193A0FCE687BE7153B89868 /* Pods_Qari_IbrahimUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16643D75A2A96E688059C1A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A41C7EF6EBE03EDA30E2A1B /* Pods-Qari Ibrahim.debug.xcconfig */,
+				17455C7A811924ABCE5EDACE /* Pods-Qari Ibrahim.release.xcconfig */,
+				97F0D7350DC661AECF8F1660 /* Pods-Qari IbrahimTests.debug.xcconfig */,
+				099E50F41BF05C66D9311182 /* Pods-Qari IbrahimTests.release.xcconfig */,
+				6262F98B5ADBB3EEA50224A4 /* Pods-Qari IbrahimUITests.debug.xcconfig */,
+				9CE21D879763F00E69059FEE /* Pods-Qari IbrahimUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7BE4F8DB225353640039382C = {
+			isa = PBXGroup;
+			children = (
+				7BE4F8E6225353640039382C /* Qari Ibrahim */,
+				7BE4F8FB225353650039382C /* Qari IbrahimTests */,
+				7BE4F906225353650039382C /* Qari IbrahimUITests */,
+				7BE4F8E5225353640039382C /* Products */,
+				16643D75A2A96E688059C1A6 /* Pods */,
+				EF2096EF8AE5111F289BFDB2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7BE4F8E5225353640039382C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BE4F8E4225353640039382C /* Qari Ibrahim.app */,
+				7BE4F8F8225353650039382C /* Qari IbrahimTests.xctest */,
+				7BE4F903225353650039382C /* Qari IbrahimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BE4F8E6225353640039382C /* Qari Ibrahim */ = {
+			isa = PBXGroup;
+			children = (
+				7BE4F9362254A2640039382C /* CCSignLanguage W00 Regular.ttf */,
+				7BE4F9382254A26B0039382C /* Gotham Rounded Bold.otf */,
+				7BE4F93C2254A2770039382C /* SFUIText-Medium.ttf */,
+				7BE4F93A2254A2700039382C /* sf-compact-display-medium-5864711817c30.otf */,
+				7BE4F93022549F490039382C /* fonts */,
+				7BE4F8E7225353640039382C /* AppDelegate.swift */,
+				7BE4F8EB225353640039382C /* Main.storyboard */,
+				7BE4F91D2253A0010039382C /* TajweedViewController.swift */,
+				7BE4F91B22539A870039382C /* QiraatViewController.swift */,
+				7BE4F919225383680039382C /* QuraanViewController.swift */,
+				7BE4F91522535CA00039382C /* CategoryHomeViewController.swift */,
+				7BE4F8EE225353650039382C /* Assets.xcassets */,
+				7BDE17D3225E39AD00BDD6DF /* naat.mp3 */,
+				7B8E259E22635BE900526559 /* America.mp4 */,
+				7BE4F8F0225353650039382C /* LaunchScreen.storyboard */,
+				7BE4F8F3225353650039382C /* Info.plist */,
+				7B59CCB92255070D000E2BCF /* AboutUsViewController.swift */,
+				7BE4F91722536CB00039382C /* NewViewController.swift */,
+				7BE4F93E2254A7F70039382C /* PublicationBooksViewController.swift */,
+				7BE4F9402254A8C60039382C /* PublicationsViewController.swift */,
+				7B59CCB32254D264000E2BCF /* QaidyViewController.swift */,
+				7B59CCB52254DEA4000E2BCF /* QuranTahqeeqViewController.swift */,
+				7B59CCB72254F1A0000E2BCF /* QuraanTehqeeqAudioVideoViewController.swift */,
+				7B59CCBB225616F1000E2BCF /* PlayerViewController.swift */,
+				7B59CCBD22562A22000E2BCF /* BooksPublicationViewController.swift */,
+				7B59CCBF22563ECA000E2BCF /* TasbeehViewController.swift */,
+				7B59CCC122565CAB000E2BCF /* OnlineClassesViewController.swift */,
+				7B0100E4225B397E0097AE47 /* BioViewController.swift */,
+				7B0100E6225B3E140097AE47 /* LiveClassViewController.swift */,
+				7B0100E8225B46D80097AE47 /* AskQuestionViewController.swift */,
+				7B0100EA225B826A0097AE47 /* RequestClassViewController.swift */,
+				7B0100EC225B8AEE0097AE47 /* SettingViewController.swift */,
+				7BDE17C3225C87B400BDD6DF /* SearchViewController.swift */,
+				7BDE17C7225C910A00BDD6DF /* SearchTableViewCell.swift */,
+				7BDE17C9225CA6DA00BDD6DF /* MenuViewController.swift */,
+				7BDE17CB225CA8AA00BDD6DF /* BaseViewController.swift */,
+				7B8F1AD6225F7ECA00E8204A /* QaidySubViewController.swift */,
+				7B8E25A02263755800526559 /* ShareViewController.swift */,
+				7B6CB1F222646BC300A81289 /* Localizable.strings */,
+			);
+			path = "Qari Ibrahim";
+			sourceTree = "<group>";
+		};
+		7BE4F8FB225353650039382C /* Qari IbrahimTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BE4F8FC225353650039382C /* Qari_IbrahimTests.swift */,
+				7BE4F8FE225353650039382C /* Info.plist */,
+			);
+			path = "Qari IbrahimTests";
+			sourceTree = "<group>";
+		};
+		7BE4F906225353650039382C /* Qari IbrahimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BE4F907225353650039382C /* Qari_IbrahimUITests.swift */,
+				7BE4F909225353650039382C /* Info.plist */,
+			);
+			path = "Qari IbrahimUITests";
+			sourceTree = "<group>";
+		};
+		EF2096EF8AE5111F289BFDB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F245658A2CEBF70F6D711C57 /* Pods_Qari_Ibrahim.framework */,
+				D0703CD12C6ECBCB514834EE /* Pods_Qari_IbrahimTests.framework */,
+				CAD7A718D36E08BB43EE00B4 /* Pods_Qari_IbrahimUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BE4F8E3225353640039382C /* Qari Ibrahim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE4F90C225353650039382C /* Build configuration list for PBXNativeTarget "Qari Ibrahim" */;
+			buildPhases = (
+				6148E00E7D49517313AE047A /* [CP] Check Pods Manifest.lock */,
+				7BE4F8E0225353640039382C /* Sources */,
+				7BE4F8E1225353640039382C /* Frameworks */,
+				7BE4F8E2225353640039382C /* Resources */,
+				6FE7F27CA9BAFE5B762D8701 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Qari Ibrahim";
+			productName = "Qari Ibrahim";
+			productReference = 7BE4F8E4225353640039382C /* Qari Ibrahim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BE4F8F7225353650039382C /* Qari IbrahimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE4F90F225353650039382C /* Build configuration list for PBXNativeTarget "Qari IbrahimTests" */;
+			buildPhases = (
+				1E7BA046CEC8193BE1CE5BA8 /* [CP] Check Pods Manifest.lock */,
+				7BE4F8F4225353650039382C /* Sources */,
+				7BE4F8F5225353650039382C /* Frameworks */,
+				7BE4F8F6225353650039382C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BE4F8FA225353650039382C /* PBXTargetDependency */,
+			);
+			name = "Qari IbrahimTests";
+			productName = "Qari IbrahimTests";
+			productReference = 7BE4F8F8225353650039382C /* Qari IbrahimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7BE4F902225353650039382C /* Qari IbrahimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE4F912225353650039382C /* Build configuration list for PBXNativeTarget "Qari IbrahimUITests" */;
+			buildPhases = (
+				4695F729901CECD904F4FE08 /* [CP] Check Pods Manifest.lock */,
+				7BE4F8FF225353650039382C /* Sources */,
+				7BE4F900225353650039382C /* Frameworks */,
+				7BE4F901225353650039382C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BE4F905225353650039382C /* PBXTargetDependency */,
+			);
+			name = "Qari IbrahimUITests";
+			productName = "Qari IbrahimUITests";
+			productReference = 7BE4F903225353650039382C /* Qari IbrahimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BE4F8DC225353640039382C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Muhammad Amir";
+				TargetAttributes = {
+					7BE4F8E3225353640039382C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7BE4F8F7225353650039382C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7BE4F8E3225353640039382C;
+					};
+					7BE4F902225353650039382C = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7BE4F8E3225353640039382C;
+					};
+				};
+			};
+			buildConfigurationList = 7BE4F8DF225353640039382C /* Build configuration list for PBXProject "Qari Ibrahim" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BE4F8DB225353640039382C;
+			productRefGroup = 7BE4F8E5225353640039382C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BE4F8E3225353640039382C /* Qari Ibrahim */,
+				7BE4F8F7225353650039382C /* Qari IbrahimTests */,
+				7BE4F902225353650039382C /* Qari IbrahimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BE4F8E2225353640039382C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B8E259F22635BEA00526559 /* America.mp4 in Resources */,
+				7BE4F9322254A1640039382C /* fonts in Resources */,
+				7B6CB1F022646BC300A81289 /* Localizable.strings in Resources */,
+				7BE4F93D2254A2770039382C /* SFUIText-Medium.ttf in Resources */,
+				7BDE17D4225E39AD00BDD6DF /* naat.mp3 in Resources */,
+				7BE4F93B2254A2700039382C /* sf-compact-display-medium-5864711817c30.otf in Resources */,
+				7BE4F8F2225353650039382C /* LaunchScreen.storyboard in Resources */,
+				7BE4F9392254A26B0039382C /* Gotham Rounded Bold.otf in Resources */,
+				7BE4F8EF225353650039382C /* Assets.xcassets in Resources */,
+				7BE4F9372254A2640039382C /* CCSignLanguage W00 Regular.ttf in Resources */,
+				7BE4F8ED225353640039382C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE4F8F6225353650039382C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE4F901225353650039382C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E7BA046CEC8193BE1CE5BA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qari IbrahimTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4695F729901CECD904F4FE08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qari IbrahimUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6148E00E7D49517313AE047A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qari Ibrahim-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FE7F27CA9BAFE5B762D8701 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qari Ibrahim/Pods-Qari Ibrahim-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qari Ibrahim/Pods-Qari Ibrahim-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Qari Ibrahim/Pods-Qari Ibrahim-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BE4F8E0225353640039382C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B8F1AD7225F7ECA00E8204A /* QaidySubViewController.swift in Sources */,
+				7BE4F91A225383680039382C /* QuraanViewController.swift in Sources */,
+				7BE4F8E8225353640039382C /* AppDelegate.swift in Sources */,
+				7B0100E5225B397E0097AE47 /* BioViewController.swift in Sources */,
+				7B59CCB42254D264000E2BCF /* QaidyViewController.swift in Sources */,
+				7BE4F93F2254A7F70039382C /* PublicationBooksViewController.swift in Sources */,
+				7B0100ED225B8AEE0097AE47 /* SettingViewController.swift in Sources */,
+				7B59CCBE22562A22000E2BCF /* BooksPublicationViewController.swift in Sources */,
+				7BDE17CA225CA6DA00BDD6DF /* MenuViewController.swift in Sources */,
+				7B59CCBA2255070D000E2BCF /* AboutUsViewController.swift in Sources */,
+				7BDE17C8225C910A00BDD6DF /* SearchTableViewCell.swift in Sources */,
+				7BE4F91C22539A870039382C /* QiraatViewController.swift in Sources */,
+				7B59CCB82254F1A0000E2BCF /* QuraanTehqeeqAudioVideoViewController.swift in Sources */,
+				7B59CCBC225616F1000E2BCF /* PlayerViewController.swift in Sources */,
+				7B0100EB225B826A0097AE47 /* RequestClassViewController.swift in Sources */,
+				7BDE17C4225C87B400BDD6DF /* SearchViewController.swift in Sources */,
+				7BE4F91622535CA00039382C /* CategoryHomeViewController.swift in Sources */,
+				7B59CCC222565CAB000E2BCF /* OnlineClassesViewController.swift in Sources */,
+				7B0100E9225B46D80097AE47 /* AskQuestionViewController.swift in Sources */,
+				7BE4F91822536CB00039382C /* NewViewController.swift in Sources */,
+				7BE4F9412254A8C60039382C /* PublicationsViewController.swift in Sources */,
+				7BDE17CC225CA8AA00BDD6DF /* BaseViewController.swift in Sources */,
+				7B59CCB62254DEA4000E2BCF /* QuranTahqeeqViewController.swift in Sources */,
+				7B59CCC022563ECA000E2BCF /* TasbeehViewController.swift in Sources */,
+				7B8E25A12263755800526559 /* ShareViewController.swift in Sources */,
+				7BE4F91E2253A0010039382C /* TajweedViewController.swift in Sources */,
+				7B0100E7225B3E140097AE47 /* LiveClassViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE4F8F4225353650039382C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE4F8FD225353650039382C /* Qari_IbrahimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BE4F8FF225353650039382C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE4F908225353650039382C /* Qari_IbrahimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BE4F8FA225353650039382C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BE4F8E3225353640039382C /* Qari Ibrahim */;
+			targetProxy = 7BE4F8F9225353650039382C /* PBXContainerItemProxy */;
+		};
+		7BE4F905225353650039382C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BE4F8E3225353640039382C /* Qari Ibrahim */;
+			targetProxy = 7BE4F904225353650039382C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B6CB1F222646BC300A81289 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B6CB1F122646BC300A81289 /* ur */,
+				7B6CB1F322646BED00A81289 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		7BE4F8EB225353640039382C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE4F8EC225353640039382C /* Base */,
+				7B6CB1EC22646A9300A81289 /* ur */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BE4F8F0225353650039382C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE4F8F1225353650039382C /* Base */,
+				7B6CB1ED22646A9300A81289 /* ur */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BE4F90A225353650039382C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BE4F90B225353650039382C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BE4F90D225353650039382C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A41C7EF6EBE03EDA30E2A1B /* Pods-Qari Ibrahim.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VLH8W5K4X7;
+				INFOPLIST_FILE = "Qari Ibrahim/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dandy.Qari-Ibrahim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BE4F90E225353650039382C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17455C7A811924ABCE5EDACE /* Pods-Qari Ibrahim.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VLH8W5K4X7;
+				INFOPLIST_FILE = "Qari Ibrahim/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dandy.Qari-Ibrahim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7BE4F910225353650039382C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97F0D7350DC661AECF8F1660 /* Pods-Qari IbrahimTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VLH8W5K4X7;
+				INFOPLIST_FILE = "Qari IbrahimTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dandy.Qari-IbrahimTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qari Ibrahim.app/Qari Ibrahim";
+			};
+			name = Debug;
+		};
+		7BE4F911225353650039382C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 099E50F41BF05C66D9311182 /* Pods-Qari IbrahimTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VLH8W5K4X7;
+				INFOPLIST_FILE = "Qari IbrahimTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dandy.Qari-IbrahimTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Qari Ibrahim.app/Qari Ibrahim";
+			};
+			name = Release;
+		};
+		7BE4F913225353650039382C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6262F98B5ADBB3EEA50224A4 /* Pods-Qari IbrahimUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VLH8W5K4X7;
+				INFOPLIST_FILE = "Qari IbrahimUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dandy.Qari-IbrahimUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Qari Ibrahim";
+			};
+			name = Debug;
+		};
+		7BE4F914225353650039382C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE21D879763F00E69059FEE /* Pods-Qari IbrahimUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VLH8W5K4X7;
+				INFOPLIST_FILE = "Qari IbrahimUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dandy.Qari-IbrahimUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Qari Ibrahim";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BE4F8DF225353640039382C /* Build configuration list for PBXProject "Qari Ibrahim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE4F90A225353650039382C /* Debug */,
+				7BE4F90B225353650039382C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE4F90C225353650039382C /* Build configuration list for PBXNativeTarget "Qari Ibrahim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE4F90D225353650039382C /* Debug */,
+				7BE4F90E225353650039382C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE4F90F225353650039382C /* Build configuration list for PBXNativeTarget "Qari IbrahimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE4F910225353650039382C /* Debug */,
+				7BE4F911225353650039382C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE4F912225353650039382C /* Build configuration list for PBXNativeTarget "Qari IbrahimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE4F913225353650039382C /* Debug */,
+				7BE4F914225353650039382C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BE4F8DC225353640039382C /* Project object */;
+}

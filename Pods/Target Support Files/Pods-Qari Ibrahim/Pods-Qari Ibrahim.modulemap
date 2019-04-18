@@ -1,0 +1,6 @@
+framework module Pods_Qari_Ibrahim {
+  umbrella header "Pods-Qari Ibrahim-umbrella.h"
+
+  export *
+  module * { export * }
+}

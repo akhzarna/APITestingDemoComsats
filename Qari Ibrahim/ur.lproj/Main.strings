@@ -1,0 +1,345 @@
+
+/* Class = "UIButton"; normalTitle = "Play"; ObjectID = "0HY-1o-yqn"; */
+"0HY-1o-yqn.normalTitle" = "Play";
+
+/* Class = "UILabel"; text = "Books"; ObjectID = "1SI-eM-Bbl"; */
+"1SI-eM-Bbl.text" = "Books";
+
+/* Class = "UIButton"; normalTitle = "Pause"; ObjectID = "22d-4L-1bd"; */
+"22d-4L-1bd.normalTitle" = "Pause";
+
+/* Class = "UITextView"; text = "Tarteel"; ObjectID = "271-Js-FbH"; */
+"271-Js-FbH.text" = "Tarteel";
+
+/* Class = "UILabel"; text = "Tahqeeq"; ObjectID = "2VO-LF-G7b"; */
+"2VO-LF-G7b.text" = "Tahqeeq";
+
+/* Class = "UILabel"; text = "Qaidy"; ObjectID = "2zZ-GX-CLg"; */
+"2zZ-GX-CLg.text" = "Qaidy";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "3BU-B8-kRx"; */
+"3BU-B8-kRx.normalTitle" = "-";
+
+/* Class = "UITextView"; text = "Online Class"; ObjectID = "3iv-sI-s7m"; */
+"3iv-sI-s7m.text" = "Online Class";
+
+/* Class = "UILabel"; text = "Publications"; ObjectID = "50p-Ky-eez"; */
+"50p-Ky-eez.text" = "Publications";
+
+/* Class = "UITextView"; text = "Question"; ObjectID = "5W9-WY-nc5"; */
+"5W9-WY-nc5.text" = "Question";
+
+/* Class = "UILabel"; text = "Request Class"; ObjectID = "5bZ-iw-MG2"; */
+"5bZ-iw-MG2.text" = "Request Class";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "62e-KY-9xf"; */
+"62e-KY-9xf.text" = "Label";
+
+/* Class = "UILabel"; text = "Search"; ObjectID = "7qh-0p-RrH"; */
+"7qh-0p-RrH.text" = "Search";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8A6-fZ-oGG"; */
+"8A6-fZ-oGG.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "Live Class"; ObjectID = "8NV-AE-WpU"; */
+"8NV-AE-WpU.text" = "Live Class";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8Xn-xg-BEt"; */
+"8Xn-xg-BEt.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9oL-7i-Xec"; */
+"9oL-7i-Xec.text" = "Label";
+
+/* Class = "UITextView"; text = "Learn Qir'aat"; ObjectID = "AVY-St-2ua"; */
+"AVY-St-2ua.text" = "Learn Qir'aat";
+
+/* Class = "UITextView"; text = "Qari Qaida 1"; ObjectID = "Acf-H8-LPC"; */
+"Acf-H8-LPC.text" = "Qari Qaida 1";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "AmD-c4-BKm"; */
+"AmD-c4-BKm.placeholder" = "Email";
+
+/* Class = "UITextView"; text = "Share"; ObjectID = "CBr-mG-YRP"; */
+"CBr-mG-YRP.text" = "Share";
+
+/* Class = "UITextView"; text = "Qaidy"; ObjectID = "DCX-hH-Av7"; */
+"DCX-hH-Av7.text" = "Qaidy";
+
+/* Class = "UILabel"; text = "Books"; ObjectID = "Diq-MM-2gn"; */
+"Diq-MM-2gn.text" = "Books";
+
+/* Class = "UITextView"; text = "Qur'aan"; ObjectID = "FXG-Zw-uXJ"; */
+"FXG-Zw-uXJ.text" = "Qur'aan";
+
+/* Class = "UILabel"; text = "Publications"; ObjectID = "Fiw-e5-fQx"; */
+"Fiw-e5-fQx.text" = "Publications";
+
+/* Class = "UILabel"; text = "Tahqeeq"; ObjectID = "HPL-mM-0D4"; */
+"HPL-mM-0D4.text" = "Tahqeeq";
+
+/* Class = "UITextField"; placeholder = "Your Name"; ObjectID = "Hia-ZW-cMM"; */
+"Hia-ZW-cMM.placeholder" = "Your Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "IPX-gT-4V4"; */
+"IPX-gT-4V4.text" = "Label";
+
+/* Class = "UILabel"; text = "Audio"; ObjectID = "IoR-1W-6pb"; */
+"IoR-1W-6pb.text" = "Audio";
+
+/* Class = "UILabel"; text = "Video"; ObjectID = "Iv8-Ef-yno"; */
+"Iv8-Ef-yno.text" = "Video";
+
+/* Class = "UITextView"; text = "Recitation"; ObjectID = "J2d-cx-b2F"; */
+"J2d-cx-b2F.text" = "Recitation";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KP6-K0-g9S"; */
+"KP6-K0-g9S.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "Hadr"; ObjectID = "KYQ-ph-GZG"; */
+"KYQ-ph-GZG.text" = "Hadr";
+
+/* Class = "UITextView"; text = "Classes"; ObjectID = "KlL-Jh-LMk"; */
+"KlL-Jh-LMk.text" = "Classes";
+
+/* Class = "UITextView"; text = "Publications"; ObjectID = "L7F-qY-oNt"; */
+"L7F-qY-oNt.text" = "Publications";
+
+/* Class = "UILabel"; text = "It was naratted by....:"; ObjectID = "LPh-R2-kJB"; */
+"LPh-R2-kJB.text" = "It was naratted by....:";
+
+/* Class = "UILabel"; text = "Qaidy"; ObjectID = "Lej-ss-689"; */
+"Lej-ss-689.text" = "Qaidy";
+
+/* Class = "UITextView"; text = "Qir'aat"; ObjectID = "NLZ-Xe-dMG"; */
+"NLZ-Xe-dMG.text" = "Qir'aat";
+
+/* Class = "UITextView"; text = "Tasbeeh"; ObjectID = "NjY-H9-E3j"; */
+"NjY-H9-E3j.text" = "Tasbeeh";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OF8-qG-j7G"; */
+"OF8-qG-j7G.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "Tamhidi Qaida"; ObjectID = "PMM-ld-cOB"; */
+"PMM-ld-cOB.text" = "Tamhidi Qaida";
+
+/* Class = "UITextView"; text = "Ghunna"; ObjectID = "PrK-dE-Tfd"; */
+"PrK-dE-Tfd.text" = "Ghunna";
+
+/* Class = "UITextView"; text = "Tajweed"; ObjectID = "RDz-Y0-70c"; */
+"RDz-Y0-70c.text" = "Tajweed";
+
+/* Class = "UITextView"; text = "Workshops"; ObjectID = "RuI-LH-cJJ"; */
+"RuI-LH-cJJ.text" = "Workshops";
+
+/* Class = "UITextField"; placeholder = "Your Name"; ObjectID = "S08-Eo-XOo"; */
+"S08-Eo-XOo.placeholder" = "Your Name";
+
+/* Class = "UILabel"; text = "Address:"; ObjectID = "S9Z-di-805"; */
+"S9Z-di-805.text" = "Address:";
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "Tft-hq-pBT"; */
+"Tft-hq-pBT.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "Audio"; ObjectID = "Trk-Am-5Sc"; */
+"Trk-Am-5Sc.text" = "Audio";
+
+/* Class = "UILabel"; text = "Slides"; ObjectID = "Uy6-bw-kif"; */
+"Uy6-bw-kif.text" = "Slides";
+
+/* Class = "UILabel"; text = "Tohfa-tul-Qari"; ObjectID = "VK8-T6-1ZG"; */
+"VK8-T6-1ZG.text" = "Tohfa-tul-Qari";
+
+/* Class = "UILabel"; text = "Setting"; ObjectID = "W15-1Y-cBg"; */
+"W15-1Y-cBg.text" = "Setting";
+
+/* Class = "UITextField"; placeholder = "Your Name"; ObjectID = "WUH-LY-jed"; */
+"WUH-LY-jed.placeholder" = "Your Name";
+
+/* Class = "UILabel"; text = "Next"; ObjectID = "XD5-Kw-uQi"; */
+"XD5-Kw-uQi.text" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Xdc-En-6lY"; */
+"Xdc-En-6lY.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "please fill out field to ask a question"; ObjectID = "XkT-Kl-3cN"; */
+"XkT-Kl-3cN.text" = "please fill out field to ask a question";
+
+/* Class = "UITextView"; text = "Qir'aat"; ObjectID = "YGl-iV-gS6"; */
+"YGl-iV-gS6.text" = "Qir'aat";
+
+/* Class = "UITextView"; text = "Courses"; ObjectID = "YYf-mL-WNV"; */
+"YYf-mL-WNV.text" = "Courses";
+
+/* Class = "UILabel"; text = "Qur'aan"; ObjectID = "ZDO-vR-bFn"; */
+"ZDO-vR-bFn.text" = "Qur'aan";
+
+/* Class = "UILabel"; text = "Email:"; ObjectID = "Zkr-MX-ZQf"; */
+"Zkr-MX-ZQf.text" = "Email:";
+
+/* Class = "UILabel"; text = "Live Class"; ObjectID = "Zoe-2o-s2O"; */
+"Zoe-2o-s2O.text" = "Live Class";
+
+/* Class = "UILabel"; text = "Publications"; ObjectID = "a6H-IN-03m"; */
+"a6H-IN-03m.text" = "Publications";
+
+/* Class = "UITextView"; text = "Qari Qaida 2"; ObjectID = "aER-eu-19B"; */
+"aER-eu-19B.text" = "Qari Qaida 2";
+
+/* Class = "UILabel"; text = "This is the information about the organization of the application"; ObjectID = "aea-h1-sel"; */
+"aea-h1-sel.text" = "This is the information about the organization of the application";
+
+/* Class = "UITextField"; placeholder = "Your Name"; ObjectID = "bEy-lu-HGS"; */
+"bEy-lu-HGS.placeholder" = "Your Name";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bQu-tk-lzo"; */
+"bQu-tk-lzo.normalTitle" = "Button";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "bS2-1E-KDf"; */
+"bS2-1E-KDf.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UITextView"; text = "Download"; ObjectID = "bSe-DX-juK"; */
+"bSe-DX-juK.text" = "Download";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "bT1-IN-KHk"; */
+"bT1-IN-KHk.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UITextField"; placeholder = "Your Name"; ObjectID = "bdy-ij-RL6"; */
+"bdy-ij-RL6.placeholder" = "Your Name";
+
+/* Class = "UITextView"; text = "Tadweer"; ObjectID = "bkP-mp-7Mr"; */
+"bkP-mp-7Mr.text" = "Tadweer";
+
+/* Class = "UITextView"; text = "Tajweedi Qaida"; ObjectID = "czi-vv-Te2"; */
+"czi-vv-Te2.text" = "Tajweedi Qaida";
+
+/* Class = "UILabel"; text = "Share"; ObjectID = "dRX-yN-q29"; */
+"dRX-yN-q29.text" = "Share";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,"; ObjectID = "deh-ZQ-dsL"; */
+"deh-ZQ-dsL.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,";
+
+/* Class = "UITextView"; text = "Publications"; ObjectID = "df4-dQ-0oy"; */
+"df4-dQ-0oy.text" = "Publications";
+
+/* Class = "UITextField"; placeholder = "User Name"; ObjectID = "eQG-BQ-qVG"; */
+"eQG-BQ-qVG.placeholder" = "User Name";
+
+/* Class = "UILabel"; text = "About Us"; ObjectID = "exg-sn-p8M"; */
+"exg-sn-p8M.text" = "About Us";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "f3c-ei-eO4"; */
+"f3c-ei-eO4.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Your Name"; ObjectID = "fh8-pg-3PO"; */
+"fh8-pg-3PO.placeholder" = "Your Name";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "gKQ-4d-0eC"; */
+"gKQ-4d-0eC.normalTitle" = "+";
+
+/* Class = "UIButton"; normalTitle = "Language"; ObjectID = "hGl-Yr-4Xk"; */
+"hGl-Yr-4Xk.normalTitle" = "Language";
+
+/* Class = "UITextView"; text = "Tahqeeq"; ObjectID = "hRG-If-uzk"; */
+"hRG-If-uzk.text" = "Tahqeeq";
+
+/* Class = "UILabel"; text = "Video"; ObjectID = "hVG-rF-oQt"; */
+"hVG-rF-oQt.text" = "Video";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "jGJ-8X-hz3"; */
+"jGJ-8X-hz3.normalTitle" = "Submit";
+
+/* Class = "UITextView"; text = "Download"; ObjectID = "kBX-2h-bOg"; */
+"kBX-2h-bOg.text" = "Download";
+
+/* Class = "UILabel"; text = "Audio"; ObjectID = "kPq-KF-VMk"; */
+"kPq-KF-VMk.text" = "Audio";
+
+/* Class = "UITextView"; text = "Share"; ObjectID = "mgw-tN-NQm"; */
+"mgw-tN-NQm.text" = "Share";
+
+/* Class = "UIButton"; normalTitle = "Font"; ObjectID = "mh8-Ma-qVL"; */
+"mh8-Ma-qVL.normalTitle" = "Font";
+
+/* Class = "UIButton"; normalTitle = "Replay"; ObjectID = "mo8-Em-Oeo"; */
+"mo8-Em-Oeo.normalTitle" = "Replay";
+
+/* Class = "UITextView"; text = "Tajweed"; ObjectID = "na6-bY-kxd"; */
+"na6-bY-kxd.text" = "Tajweed";
+
+/* Class = "UILabel"; text = "الحمداللہ"; ObjectID = "nv9-Jk-3gF"; */
+"nv9-Jk-3gF.text" = "الحمداللہ";
+
+/* Class = "UITextView"; text = "Amli Tajweed"; ObjectID = "nvo-L6-Wtr"; */
+"nvo-L6-Wtr.text" = "Amli Tajweed";
+
+/* Class = "UILabel"; text = "Qur'aan"; ObjectID = "oeN-w3-C9H"; */
+"oeN-w3-C9H.text" = "Qur'aan";
+
+/* Class = "UILabel"; text = "Contact Number:"; ObjectID = "okA-Te-ePk"; */
+"okA-Te-ePk.text" = "Contact Number:";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qYQ-bA-nuy"; */
+"qYQ-bA-nuy.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qsm-5T-vmw"; */
+"qsm-5T-vmw.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Books"; ObjectID = "rUX-Zr-Evl"; */
+"rUX-Zr-Evl.text" = "Books";
+
+/* Class = "UILabel"; text = "Publications"; ObjectID = "rk5-65-0gg"; */
+"rk5-65-0gg.text" = "Publications";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "s2C-wk-vv7"; */
+"s2C-wk-vv7.normalTitle" = "Submit";
+
+/* Class = "UILabel"; text = "Online Classes"; ObjectID = "sjU-i7-u5U"; */
+"sjU-i7-u5U.text" = "Online Classes";
+
+/* Class = "UILabel"; text = "Publications"; ObjectID = "tuU-2c-Boz"; */
+"tuU-2c-Boz.text" = "Publications";
+
+/* Class = "UITextField"; placeholder = "Your Name"; ObjectID = "twp-fm-0S2"; */
+"twp-fm-0S2.placeholder" = "Your Name";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uIo-w0-lz6"; */
+"uIo-w0-lz6.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Ask a question"; ObjectID = "uM5-42-bUM"; */
+"uM5-42-bUM.text" = "Ask a question";
+
+/* Class = "UITextField"; placeholder = "Your Name"; ObjectID = "vGa-I4-vUx"; */
+"vGa-I4-vUx.placeholder" = "Your Name";
+
+/* Class = "UITextView"; text = "Takmeel-e-Qir'aat"; ObjectID = "vwX-Ph-5z7"; */
+"vwX-Ph-5z7.text" = "Takmeel-e-Qir'aat";
+
+/* Class = "UILabel"; text = "Play"; ObjectID = "wVa-Ul-mXW"; */
+"wVa-Ul-mXW.text" = "Play";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "x4T-Ge-lpw"; */
+"x4T-Ge-lpw.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xiA-QT-qRv"; */
+"xiA-QT-qRv.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "There is no oline class available right now. you can request a class by clicking the button right below"; ObjectID = "xmd-9V-PwX"; */
+"xmd-9V-PwX.text" = "There is no oline class available right now. you can request a class by clicking the button right below";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "y7V-8o-Vct"; */
+"y7V-8o-Vct.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Request for Class"; ObjectID = "yAK-bI-toy"; */
+"yAK-bI-toy.text" = "Request for Class";
+
+/* Class = "UITextField"; placeholder = "Your Name"; ObjectID = "zEU-DV-bvj"; */
+"zEU-DV-bvj.placeholder" = "Your Name";
+
+/* Class = "UITextField"; placeholder = "Duration"; ObjectID = "zet-Zn-UJG"; */
+"zet-Zn-UJG.placeholder" = "Duration";
+
+/* Class = "UILabel"; text = "Bio"; ObjectID = "zvO-E1-DCK"; */
+"zvO-E1-DCK.text" = "Bio";
+
+/* Class = "UITextView"; text = "Qur'aan"; ObjectID = "zy9-AC-WjK"; */
+"zy9-AC-WjK.text" = "Qur'aan";
