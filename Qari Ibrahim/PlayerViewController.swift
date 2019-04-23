@@ -12,7 +12,7 @@ import AVKit
 
 class PlayerViewController: UIViewController {
     
-    var dataArray = [AnyObject]()
+    var dataArray: [String: AnyObject] = [String: AnyObject]()
     var player:AVAudioPlayer = AVAudioPlayer()
     @IBOutlet weak var DownloadLbl: UITextView!
     @IBOutlet weak var ShareLbl: UITextView!
@@ -31,8 +31,10 @@ class PlayerViewController: UIViewController {
         print("received data iss===", dataArray)
         do
         {
-            let audioPath = Bundle.main.path(forResource: "naat", ofType: "mp3")
-            try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            let stringUrl = "http://channelsmedia.net/quranapp/public/"
+            let apiUrl = dataArray["video_link"] as! String
+            let audioPath = stringUrl + apiUrl
+            try player = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath) as URL)
         }
         catch
         {
@@ -62,16 +64,47 @@ class PlayerViewController: UIViewController {
     
     @IBAction func btnPlay(_ sender: Any) {
         //player.play()
-        if let videoURL = Bundle.main.path(forResource: "America", ofType: "mp4")
-        {
-        let player = AVPlayer(url: URL(fileURLWithPath: videoURL) )
-        let vc = AVPlayerViewController()
-        vc.player = player
         
-        present(vc, animated: true) {
-            vc.player?.play()
+        
+        
+        let video = (dataArray as AnyObject)["audio_link"] as? String
+        
+        var newURL = "http://channelsmedia.net/quranapp/public/" + video!
+        
+        let videoURL = NSURL(string: newURL)
+        let player = AVPlayer(url: videoURL! as URL)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        self.present(playerViewController, animated: true) {
+            playerViewController.player!.play()
         }
-        }
+
+//                if var videoURL = video
+//                {
+//
+//                    videoURL = "http://channelsmedia.net/quranapp/public/" + videoURL
+//                    let player = AVPlayer(url: URL(fileURLWithPath: "http://channelsmedia.net/quranapp/public/" + videoURL ) )
+//                    print(videoURL)
+//                    let vc = AVPlayerViewController()
+//                    vc.player = player
+//
+//                    present(vc, animated: true) {
+//                        vc.player?.play()
+//                    }
+//                }
+        
+        
+        
+//        if let videoURL = Bundle.main.path(forResource: "America", ofType: "mp4")
+//        {
+//        let player = AVPlayer(url: URL(fileURLWithPath: videoURL) )
+//        let vc = AVPlayerViewController()
+//        vc.player = player
+//
+//        present(vc, animated: true) {
+//            vc.player?.play()
+//        }
+//        }
     }
     
     @IBAction func btnPause(_ sender: Any) {

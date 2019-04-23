@@ -29,22 +29,22 @@ class QiraatViewController: BaseViewController {
         }
         
         if((sender as AnyObject).tag == 2){
-            let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "QiraatViewControllerID") as! QiraatViewController
+            let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "PublicationsViewControllerID") as! PublicationsViewController
             self.navigationController?.pushViewController(CategoryPageView, animated: true)
         }
-//        if((sender as AnyObject).tag == 3){
-//            let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "TajweedViewControllerID") as! TajweedViewController
-//            self.navigationController?.pushViewController(CategoryPageView, animated: true)
-//        }
-//
-//        if((sender as AnyObject).tag == 4){
-//            let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "PublicationsViewControllerID") as! PublicationsViewController
-//            self.navigationController?.pushViewController(CategoryPageView, animated: true)
-//        }
-//        if((sender as AnyObject).tag == 5){
-//            let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "TasbeehViewControllerID") as! TasbeehViewController
-//            self.navigationController?.pushViewController(CategoryPageView, animated: true)
-//        }
+        if((sender as AnyObject).tag == 3){
+            let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "PublicationsViewControllerID") as! PublicationsViewController
+            self.navigationController?.pushViewController(CategoryPageView, animated: true)
+        }
+
+        if((sender as AnyObject).tag == 4){
+            let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "PublicationsViewControllerID") as! PublicationsViewController
+            self.navigationController?.pushViewController(CategoryPageView, animated: true)
+        }
+        if((sender as AnyObject).tag == 5){
+            let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "PublicationsViewControllerID") as! PublicationsViewController
+            self.navigationController?.pushViewController(CategoryPageView, animated: true)
+        }
         
     }
     

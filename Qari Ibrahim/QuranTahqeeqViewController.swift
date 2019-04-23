@@ -28,18 +28,11 @@ class QuranTahqeeqViewController: BaseViewController, UITableViewDelegate, UITab
         // Do any additional setup after loading the view.
         var todoEndpoint : String = ""
         //API calling
-        if(optionSelected == 1){
-             todoEndpoint = "http://channelsmedia.net/quranapp/api/quraan/1"
-        }
-        if(optionSelected == 2){
-             todoEndpoint = "http://channelsmedia.net/quranapp/api/quraan/2"
-        }
-        if(optionSelected == 3){
-             todoEndpoint = "http://channelsmedia.net/quranapp/api/quraan/3"
-        }
-        if(optionSelected == 4){
-             todoEndpoint = "http://channelsmedia.net/quranapp/api/quraan/4"
-        }
+       
+        
+        var asString = String(optionSelected)
+        todoEndpoint = "http://channelsmedia.net/quranapp/api/quraan/"+asString
+
         
         
         Alamofire.request(todoEndpoint)
@@ -137,25 +130,26 @@ class QuranTahqeeqViewController: BaseViewController, UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
            // print("data -====", (self.myApiArray[indexPath.row] as AnyObject)["video_link"] as? String)
-        let video = (self.myApiArray[indexPath.row] as AnyObject)["video_link"] as? String
-        
+//        let video = (self.myApiArray[indexPath.row] as AnyObject)["video_link"] as? String
+//
+//
+//        if var videoURL = video
+//        {
+//
+//            videoURL = "http://channelsmedia.net/quranapp/public/" + videoURL
+//            let player = AVPlayer(url: URL(fileURLWithPath: "http://channelsmedia.net/quranapp/public/" + videoURL ) )
+//            print(videoURL)
+//            let vc = AVPlayerViewController()
+//            vc.player = player
+//
+//            present(vc, animated: true) {
+//                vc.player?.play()
+//            }
+//        }
 
-        if var videoURL = video
-        {
-            
-            videoURL = "http://channelsmedia.net/quranapp/public/" + videoURL
-            let player = AVPlayer(url: URL(fileURLWithPath: "http://channelsmedia.net/quranapp/public/" + videoURL ) )
-            print(videoURL)
-            let vc = AVPlayerViewController()
-            vc.player = player
-            
-            present(vc, animated: true) {
-                vc.player?.play()
-            }
-        }
-//        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "PlayerViewControllerID") as? PlayerViewController
-//        vc?.dataArray = (self.myApiArray[indexPath.row] as! [Any]) as [AnyObject];
-//            self.navigationController?.pushViewController(vc!, animated: true)
+                let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "PlayerViewControllerID") as? PlayerViewController
+        vc?.dataArray = (self.myApiArray[indexPath.row] as! [String : AnyObject]) as [String : AnyObject];
+            self.navigationController?.pushViewController(vc!, animated: true)
         
     }
 
