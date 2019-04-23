@@ -19,7 +19,8 @@ class QaidyViewController: BaseViewController {
     @IBOutlet weak var TitleLbl: UILabel!
     
     @IBAction func BtnTamhidiQaida(_ sender: Any) {
-        let QaidaSubView = self.storyboard?.instantiateViewController(withIdentifier: "QaidySubViewControllerID") as! QaidySubViewController
+        let QaidaSubView = self.storyboard?.instantiateViewController(withIdentifier: "PublicationsViewControllerID") as! PublicationsViewController
+        //QaidySubViewController
         self.navigationController?.pushViewController(QaidaSubView, animated: true)
     }
     

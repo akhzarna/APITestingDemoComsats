@@ -12,6 +12,7 @@ import AVKit
 
 class PlayerViewController: UIViewController {
     
+    var dataArray = [AnyObject]()
     var player:AVAudioPlayer = AVAudioPlayer()
     @IBOutlet weak var DownloadLbl: UITextView!
     @IBOutlet weak var ShareLbl: UITextView!
@@ -27,6 +28,7 @@ class PlayerViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print("received data iss===", dataArray)
         do
         {
             let audioPath = Bundle.main.path(forResource: "naat", ofType: "mp3")
