@@ -20,10 +20,12 @@ class TajweedViewController: BaseViewController {
     
     @IBAction func BtnWorkshops(_ sender: Any) {
     }
+    
     @IBAction func BtnQaidy(_ sender: Any) {
-        let QaidyPageView = self.storyboard?.instantiateViewController(withIdentifier: "QaidyViewControllerID") as! QaidyViewController
+        let QaidyPageView = self.storyboard?.instantiateViewController(withIdentifier: "PublicationsViewControllerID") as! PublicationsViewController
         self.navigationController?.pushViewController(QaidyPageView, animated: true)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,17 +39,16 @@ class TajweedViewController: BaseViewController {
         """
             )
         }
+        
         TitleLbl.font = UIFontMetrics.default.scaledFont(for: customFont)
         TitleLbl.adjustsFontForContentSizeCategory = true
-        
         QaidyLbl.font = UIFontMetrics.default.scaledFont(for: customFont)
         QaidyLbl.adjustsFontForContentSizeCategory = true
-        
         WorkshopsLbl.font = UIFontMetrics.default.scaledFont(for: customFont)
         WorkshopsLbl.adjustsFontForContentSizeCategory = true
-        
         CoursesLbl.font = UIFontMetrics.default.scaledFont(for: customFont)
         CoursesLbl.adjustsFontForContentSizeCategory = true
+        
     }
     
 
