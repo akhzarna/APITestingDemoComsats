@@ -13,10 +13,13 @@ import AVFoundation
 
 class QuranTahqeeqViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var viewOfAudio: UIView!
+    @IBOutlet weak var viewOfVideo: UIView!
     @IBOutlet weak var tblQuranVideo: UITableView!
     @IBOutlet weak var tblQuranAudio: UITableView!
     var optionSelected = 0
-    var myApiArray = [Any]()
+    var controlerSelected = 0  // 1 for quran 2 for qirat
+    var myApiArray = [QuranTehqeeqAudioVideo]()
     var objArray = [AnyObject]()
     @IBOutlet weak var SubTitleLbl: UILabel!
     @IBOutlet weak var TitleMainLbl: UILabel!
@@ -30,22 +33,35 @@ class QuranTahqeeqViewController: BaseViewController, UITableViewDelegate, UITab
         //API calling
        
         
-        var asString = String(optionSelected)
-        todoEndpoint = "http://channelsmedia.net/quranapp/api/quraan/"+asString
+        let asString = String(optionSelected)
+        if (controlerSelected == 1) {
+            todoEndpoint = "http://channelsmedia.net/quranapp/api/quraan/"+asString
+        }
+        if (controlerSelected == 2) {
+            todoEndpoint = "http://channelsmedia.net/quranapp/api/qiraat/"+asString
+            if (optionSelected == 1){
+                tblQuranAudio.isHidden = false
+                tblQuranVideo.isHidden = false
+            }else{
+                tblQuranAudio.isHidden = false
+                tblQuranVideo.isHidden = true
+                viewOfVideo.isHidden = true
+            }
+        }
+        
 
         
         
         Alamofire.request(todoEndpoint)
             .responseJSON { response in
                 // check for errors
-                
-                self.myApiArray = response.result.value as! [AnyObject]
-                //print("response", self.myApiArray)
-                
+                let arrAccess = response.result.value as! [AnyObject]
+                print("response", arrAccess)
+                self.myApiArray = QuranTehqeeqAudioVideo.PopulateArray(array: arrAccess as! [[String : Any]])
+                print("response", self.myApiArray)
                 //reloading table after getting data
                 self.tblQuranAudio.reloadData()
                 self.tblQuranVideo.reloadData()
-                
                 guard response.result.error == nil else {
                     // got an error in getting the data, need to handle
                     print("error calling GET on /todos/1")
@@ -53,14 +69,6 @@ class QuranTahqeeqViewController: BaseViewController, UITableViewDelegate, UITab
                     return
                 }
                 
-                // make sure we got some JSON since that's what we expect
-//                guard let json = response.result.value as? [String: Any] else {
-//                    print("didn't get todo object as JSON from API")
-//                    print("Error: \(response.result.error)")
-//                    return
-//                }
-                
-                //print(json)
         }
         
         //FontFamily
@@ -84,41 +92,24 @@ class QuranTahqeeqViewController: BaseViewController, UITableViewDelegate, UITab
         return Nurows
     }
     
-    //cell for audio tableviewCell
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let identifier="QuranAudioTableViewCell"
-//        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! QuranAudioTableViewCell
-//
-//
-//        print(myApiArray)
-//
-//        print( myApiArray[indexPath.row])
-//
-//        cell.lblTitle.text = (self.myApiArray[indexPath.row] as AnyObject)["title"] as? String;
-//
-//        return cell
-//    }
+   
     
-    //cell for Video tableviewCell
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == tblQuranAudio
         {
             let identifier="QuranAudioTableViewCell"
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! QuranAudioTableViewCell
-            
-            
-            cell.lblTitle.text = (self.myApiArray[indexPath.row] as AnyObject)["title"] as? String;
-            
+            let quranList = self.myApiArray[indexPath.row]
+            cell.lblTitle.text = quranList.title
             return cell
         }
+            
         else if tableView == tblQuranVideo
         {
             let identifier="QuranVideoTableViewCell"
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! QuranVideoTableViewCell
-            
-            
-            cell.VideoCellLbl.text = (self.myApiArray[indexPath.row] as AnyObject)["title"] as? String;
-            
+            let quranList = self.myApiArray[indexPath.row]
+            cell.VideoCellLbl.text = quranList.title
             return cell
         }
         return UITableViewCell()
@@ -129,27 +120,19 @@ class QuranTahqeeqViewController: BaseViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-           // print("data -====", (self.myApiArray[indexPath.row] as AnyObject)["video_link"] as? String)
-//        let video = (self.myApiArray[indexPath.row] as AnyObject)["video_link"] as? String
-//
-//
-//        if var videoURL = video
-//        {
-//
-//            videoURL = "http://channelsmedia.net/quranapp/public/" + videoURL
-//            let player = AVPlayer(url: URL(fileURLWithPath: "http://channelsmedia.net/quranapp/public/" + videoURL ) )
-//            print(videoURL)
-//            let vc = AVPlayerViewController()
-//            vc.player = player
-//
-//            present(vc, animated: true) {
-//                vc.player?.play()
-//            }
-//        }
-
-                let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "PlayerViewControllerID") as? PlayerViewController
-        vc?.dataArray = (self.myApiArray[indexPath.row] as! [String : AnyObject]) as [String : AnyObject];
-            self.navigationController?.pushViewController(vc!, animated: true)
+        // tag=1 for audio & tag=2 for video
+        var tag = 0
+        if(tableView.tag == 1){
+        tag = 1
+        }
+        if(tableView.tag == 2){
+         tag = 2
+        }
+        let vc = UIStoryboard.init(name: "Main", bundle:Bundle.main).instantiateViewController(withIdentifier: "PlayerViewControllerID") as? PlayerViewController
+        let indexObject = self.myApiArray[indexPath.row]
+        vc?.myApiArray = indexObject
+        vc?.tag = tag
+        self.navigationController?.pushViewController(vc!, animated: true)
         
     }
 

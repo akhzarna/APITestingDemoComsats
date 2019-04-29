@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SlideID" id="iN0-l3-epB" customClass="Slide" customModule="Qari_Ibrahim" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="daQ-7f-Nia">
+                    <rect key="frame" x="67" y="80" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="BAR-r5-u3u"/>
+                        <constraint firstAttribute="height" constant="128" id="Inw-ie-28y"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2gE-LG-eFK">
+                    <rect key="frame" x="16" y="248" width="343" height="399"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2gE-LG-eFK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="5o7-du-BnG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="daQ-7f-Nia" secondAttribute="trailing" constant="68" id="F4E-09-cfA"/>
+                <constraint firstItem="2gE-LG-eFK" firstAttribute="top" secondItem="daQ-7f-Nia" secondAttribute="bottom" constant="40" id="R7l-sP-fzM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2gE-LG-eFK" secondAttribute="trailing" constant="16" id="ZvH-Fe-fya"/>
+                <constraint firstItem="2gE-LG-eFK" firstAttribute="top" secondItem="daQ-7f-Nia" secondAttribute="bottom" constant="40" id="hmo-vp-xIr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2gE-LG-eFK" secondAttribute="bottom" constant="20" id="uUL-KB-xxg"/>
+                <constraint firstItem="daQ-7f-Nia" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="67" id="vxw-az-eZx"/>
+                <constraint firstItem="daQ-7f-Nia" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="zvr-GR-R8r"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageSlideMain" destination="daQ-7f-Nia" id="CF5-QZ-lJS"/>
+                <outlet property="textView" destination="2gE-LG-eFK" id="DHo-RF-agA"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>

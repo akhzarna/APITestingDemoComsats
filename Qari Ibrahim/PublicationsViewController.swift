@@ -15,7 +15,7 @@ class PublicationsViewController: BaseViewController, UITableViewDelegate, UITab
     @IBOutlet weak var PublicationQaidyTableview: UITableView!
     @IBOutlet weak var PublicationBooksTableview: UITableView!
     var optionSelected = 0
-    var myApiArray = [Any]()
+    var myApiArray = [PublicationPDF]()
     var objArray = [AnyObject]()
     
     
@@ -28,10 +28,8 @@ class PublicationsViewController: BaseViewController, UITableViewDelegate, UITab
 
             var booksApi = "http://channelsmedia.net/quranapp/api/publication/1"
         
-
             var qaidyApi = "http://channelsmedia.net/quranapp/api/publication/2"
         
-
             var slidesApi = "http://channelsmedia.net/quranapp/api/publication/3"
         
         
@@ -40,8 +38,9 @@ class PublicationsViewController: BaseViewController, UITableViewDelegate, UITab
             .responseJSON { response in
                 // check for errors
                 
-                self.myApiArray = response.result.value as! [AnyObject]
-                //print("response", self.myApiArray)
+                let arrAccess = response.result.value as! [AnyObject]
+                print("response", arrAccess)
+                self.myApiArray = PublicationPDF.PopulateArray(array: arrAccess as! [[String : Any]])
                 
                 //reloading table after getting data
                 self.PublicationBooksTableview.reloadData()
@@ -70,8 +69,11 @@ class PublicationsViewController: BaseViewController, UITableViewDelegate, UITab
             let identifier="PublicationBooksTableViewCell"
             let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! PublicationBooksTableViewCell
             
-            print("here it is===", (self.myApiArray[indexPath.row] as AnyObject)["title"] as? String)
-            cell.booksTitleLbl.text = (self.myApiArray[indexPath.row] as AnyObject)["title"] as? String;
+            let pdfList = self.myApiArray[indexPath.row]
+            cell.booksTitleLbl.text = pdfList.title
+            
+//            print("here it is===", (self.myApiArray[indexPath.row] as AnyObject)["title"] as? String)
+//            cell.booksTitleLbl.text = (self.myApiArray[indexPath.row] as AnyObject)["title"] as? String;
             
             return cell
         }
@@ -85,13 +87,27 @@ class PublicationsViewController: BaseViewController, UITableViewDelegate, UITab
             
             return cell
         }
+        else if tableView == PublicationSlidesTableview
+        {
+            let identifier="PublicationSlidesTableViewCell"
+            let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! PublicationSlidesTableViewCell
+            
+            
+            cell.slidesTitleLbl.text = (self.myApiArray[indexPath.row] as AnyObject)["title"] as? String;
+            
+            return cell
+        }
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // print("data -====", (self.myApiArray[indexPath.row] as AnyObject)["video_link"] as? String)
-       
+        let pdfViewController = self.storyboard?.instantiateViewController(withIdentifier: "PdfReaderViewControllerID") as! PdfReaderViewController
+        let objectList = self.myApiArray[indexPath.row]
+        pdfViewController.pdfURL = objectList.file      
+        self.navigationController?.pushViewController(pdfViewController, animated: true)
+        
         
 //        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "PlayerViewControllerID") as? PlayerViewController
 //        vc?.dataArray = (self.myApiArray[indexPath.row] as! [String : AnyObject]) as [String : AnyObject];

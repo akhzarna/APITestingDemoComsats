@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class AskQuestionViewController: BaseViewController {
 
@@ -19,13 +20,36 @@ class AskQuestionViewController: BaseViewController {
     @IBOutlet weak var secondInputView: UIView!
     @IBOutlet weak var userNameTextinput: UITextField!
     @IBOutlet weak var firstInputView: UIView!
-    @IBAction func BtnSubmit(_ sender: Any) {
-    }
     @IBOutlet weak var BtnSubmitoutlet: UIButton!
+    
+    @IBAction func BtnSubmit(_ sender: Any) {
+        let parameters: [String: Any] = [
+            "name" : userNameTextinput.text!,
+            "email" : emailTextinput.text!,
+            "message" : questionTextinput.text!,
+            ]
+        
+        var todoEndpoint : String = ""
+        //API calling
+        
+        
+        todoEndpoint = "http://channelsmedia.net/quranapp/api/ask_question"
+        
+        Alamofire.request(todoEndpoint, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print("post api response",response)
+        }
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        emailTextinput.delegate = self as! UITextFieldDelegate
+//        userNameTextinput.delegate = self as! UITextFieldDelegate
+//        questionTextinput.delegate = self as! UITextFieldDelegate as! UITextViewDelegate
         
         guard let customFont = UIFont(name: "Gotham Rounded", size: UIFont.labelFontSize) else {
             fatalError("""

@@ -54,7 +54,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             break
         case 7:
             print("IsAppKayBarayMainViewController\n", terminator: "")
-            self.openViewControllerBasedOnIdentifier("PlayerViewControllerID")
+            self.openViewControllerBasedOnIdentifier("BioViewControllerID")
             break
         case 8:
             print("IsAppKayBarayMainViewController\n", terminator: "8")

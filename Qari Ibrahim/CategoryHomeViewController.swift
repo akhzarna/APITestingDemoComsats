@@ -19,13 +19,11 @@ class CategoryHomeViewController: BaseViewController {
     @IBOutlet weak var TajweedLbl2: UITextView!
     @IBOutlet weak var QiraatLbl2: UITextView!
     open var hidesNavigationBarWhenPushed = false
+    
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(hidesNavigationBarWhenPushed, animated: animated)
+    navigationController?.setNavigationBarHidden(hidesNavigationBarWhenPushed, animated: animated)
     }
-    
-    
-    
     
      @IBAction func CategorySelectionBtn(_ sender: Any) {
         if((sender as AnyObject).tag == 1){
@@ -46,6 +44,7 @@ class CategoryHomeViewController: BaseViewController {
             let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "PublicationsViewControllerID") as! PublicationsViewController
             self.navigationController?.pushViewController(CategoryPageView, animated: true)
         }
+        
         if((sender as AnyObject).tag == 5){
             let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "TasbeehViewControllerID") as! TasbeehViewController
             self.navigationController?.pushViewController(CategoryPageView, animated: true)
@@ -55,6 +54,7 @@ class CategoryHomeViewController: BaseViewController {
             let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "LiveClassViewControllerID") as! LiveClassViewController
             self.navigationController?.pushViewController(CategoryPageView, animated: true)
         }
+        
         if((sender as AnyObject).tag == 7){
             let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "OnlineClassesViewControllerID") as! OnlineClassesViewController
             self.navigationController?.pushViewController(CategoryPageView, animated: true)
@@ -62,12 +62,8 @@ class CategoryHomeViewController: BaseViewController {
         
     }
     
-    
-    
-       
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         addSlideMenuButton()
         
@@ -115,9 +111,6 @@ class CategoryHomeViewController: BaseViewController {
         OnlineclassLbl7.font = UIFontMetrics.default.scaledFont(for: customFont)
         OnlineclassLbl7.adjustsFontForContentSizeCategory = true
     }
-    
-    
-    
 
     /*
     // MARK: - Navigation

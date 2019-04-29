@@ -18,8 +18,18 @@ class NewViewController: BaseViewController  {
         }
         
         if((sender as AnyObject).tag == 2){
-            let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "PlayerViewControllerID") as! PlayerViewController
-            self.navigationController?.pushViewController(CategoryPageView, animated: true)
+//            let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "PlayerViewControllerID") as! PlayerViewController
+//            self.navigationController?.pushViewController(CategoryPageView, animated: true)
+            
+            let pdfViewController = self.storyboard?.instantiateViewController(withIdentifier: "PdfReaderViewControllerID") as! PdfReaderViewController
+            self.navigationController?.pushViewController(pdfViewController, animated: true)
+                    
+                    
+//                    PdfReaderViewController()
+//               // pdfViewController.pdfURL = self.pdfURL
+//                present(pdfViewController, animated: false, completion: nil)
+            
+            
         }
         
     }
@@ -63,7 +73,11 @@ class NewViewController: BaseViewController  {
 
         
         self.navigationItem.title = "Language"
-        
+        if let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,
+                                                                   .userDomainMask,
+                                                                   true).first {
+            debugPrint("documentsPath = \(documentsPath)")
+        }
         
          //  let headerTitleColor = UIColor.white;
            self.navigationController?.navigationBar.titleTextAttributes =

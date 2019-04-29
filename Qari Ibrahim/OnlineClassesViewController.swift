@@ -13,6 +13,9 @@ class OnlineClassesViewController: BaseViewController {
     @IBOutlet weak var TitleMainLbl: UILabel!
     @IBOutlet weak var DescriptionLbl: UILabel!
     @IBAction func BtnRequestOnlineClass(_ sender: Any) {
+        let requestOnlineClass = UIStoryboard.init(name: "Main", bundle:Bundle.main).instantiateViewController(withIdentifier: "RequestClassViewControllerID") as? RequestClassViewController
+       
+        self.navigationController?.pushViewController(requestOnlineClass!, animated: true)
     }
     @IBOutlet weak var LblOfButton: UILabel!
 
