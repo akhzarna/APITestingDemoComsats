@@ -21,7 +21,6 @@ class QuranTahqeeqViewController: BaseViewController, UITableViewDelegate, UITab
     @IBOutlet weak var SubTitleLbl: UILabel!
     @IBOutlet weak var TitleMainLbl: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -76,9 +75,9 @@ class QuranTahqeeqViewController: BaseViewController, UITableViewDelegate, UITab
         """
             )
         }
+        
         TitleMainLbl.font = UIFontMetrics.default.scaledFont(for: customFont)
         TitleMainLbl.adjustsFontForContentSizeCategory = true
-        
         SubTitleLbl.font = UIFontMetrics.default.scaledFont(for: customFont)
         SubTitleLbl.adjustsFontForContentSizeCategory = true
         
