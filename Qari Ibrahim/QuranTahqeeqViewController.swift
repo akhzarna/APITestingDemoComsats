@@ -84,6 +84,9 @@ class QuranTahqeeqViewController: BaseViewController, UITableViewDelegate, UITab
         SubTitleLbl.font = UIFontMetrics.default.scaledFont(for: customFont)
         SubTitleLbl.adjustsFontForContentSizeCategory = true
         
+        self.viewOfAudio.layer.cornerRadius = 20.0
+        self.viewOfVideo.layer.cornerRadius = 20.0
+        //self.viewOfAudio.clipToBounds = true
         
     }
     

@@ -8,12 +8,12 @@
 
 import UIKit
 import PDFKit
+var pdfURL:String = ""
 
 class PdfReaderViewController: UIViewController {
 
     var pdfView = PDFView()
     var pdfURL:String = ""
-    
     
     @IBOutlet weak var viewOfPdf: UIView!
     override func viewDidLoad() {
@@ -21,13 +21,15 @@ class PdfReaderViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         viewOfPdf.addSubview(pdfView)
-        var finalUrl = "https://www.tutorialspoint.com/swift/swift_tutorial.pdf"
-            //"http://channelsmedia.net/quranapp/api/quraan/" + pdfURL
+        var finalUrl = "http://channelsmedia.net/quranapp/public/"+pdfURL
+        //"https://www.tutorialspoint.com/swift/swift_tutorial.pdf"
+        
         let urll = NSURL(string: finalUrl)
-        print("url of pDF==", urll)
-        if let document = PDFDocument(url: urll as! URL) {
+        print("url of pDF==", urll ?? nil)
+        if let document = PDFDocument(url: urll! as URL) {
             pdfView.document = document
         }
+       
         
         DispatchQueue.main.asyncAfter(deadline: .now()+3) {
             self.dismiss(animated: true, completion: nil)
@@ -38,6 +40,12 @@ class PdfReaderViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         pdfView.frame = viewOfPdf.frame
+        pdfView.translatesAutoresizingMaskIntoConstraints = false
+       // pdfView.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
+       // pdfView.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor).isActive = true
+      //  pdfView.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
+       // pdfView.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 5).isActive = true
+       
     }
     
     
@@ -83,7 +91,8 @@ extension ViewController:  URLSessionDownloadDelegate {
         // copy from temp to Document
         do {
             try FileManager.default.copyItem(at: location, to: destinationURL)
-            pdfURLTest = destinationURL
+            //let urll = destinationURL
+            pdfURL = destinationURL.absoluteString
         } catch let error {
             print("Copy Error: \(error.localizedDescription)")
         }

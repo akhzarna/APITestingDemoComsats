@@ -10,7 +10,10 @@ import UIKit
 import Alamofire
 
 class PublicationsViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
-
+    @IBOutlet weak var qaidyViewTbl: UIView!
+    @IBOutlet weak var booksViewTbl: UIView!
+    @IBOutlet weak var slidesViewTbl: UIView!
+    
     @IBOutlet weak var PublicationSlidesTableview: UITableView!
     @IBOutlet weak var PublicationQaidyTableview: UITableView!
     @IBOutlet weak var PublicationBooksTableview: UITableView!
@@ -54,6 +57,12 @@ class PublicationsViewController: BaseViewController, UITableViewDelegate, UITab
                     return
                 }
         }
+        
+        
+        
+        self.booksViewTbl.layer.cornerRadius = 20.0
+        self.qaidyViewTbl.layer.cornerRadius = 20.0
+        self.slidesViewTbl.layer.cornerRadius = 20.0
     }
     
 
@@ -105,6 +114,7 @@ class PublicationsViewController: BaseViewController, UITableViewDelegate, UITab
         // print("data -====", (self.myApiArray[indexPath.row] as AnyObject)["video_link"] as? String)
         let pdfViewController = self.storyboard?.instantiateViewController(withIdentifier: "PdfReaderViewControllerID") as! PdfReaderViewController
         let objectList = self.myApiArray[indexPath.row]
+        print("pdf urlll==", objectList.file)
         pdfViewController.pdfURL = objectList.file      
         self.navigationController?.pushViewController(pdfViewController, animated: true)
         

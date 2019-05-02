@@ -9,8 +9,9 @@
 import UIKit
 import Alamofire
 
-class RequestClassViewController: BaseViewController {
+class RequestClassViewController: BaseViewController, UIPickerViewDelegate, UIPickerViewDataSource {
    
+    let myPickerData = [String](arrayLiteral: "Tajweed Classes", "Amli Tajweed","Workshop","Teacher's trainsing")
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtClasstype: UITextField!
     @IBOutlet weak var txtDuration: UITextField!
@@ -56,10 +57,32 @@ class RequestClassViewController: BaseViewController {
                 print("post api response",response)
         }
     }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return myPickerData.count
+    }
+    
+    func pickerView( _ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return myPickerData[row]
+    }
+    
+    func pickerView( _ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+       txtClasstype.text = myPickerData[row]
+        //pickerView.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let thePicker = UIPickerView()
+        txtClasstype.inputView = thePicker
+        thePicker.delegate = self
         
         firstUsernameView.layer.borderWidth = 2
         firstUsernameView.layer.cornerRadius = 28
@@ -102,6 +125,13 @@ class RequestClassViewController: BaseViewController {
         tenTrainerView.layer.borderColor = UIColor.blue.cgColor
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        print("working")
+    
+        view.endEditing(true)
+        //super.touchesBegan(touches, with: event)
+    }
 
     /*
     // MARK: - Navigation

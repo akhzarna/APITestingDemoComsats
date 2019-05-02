@@ -46,7 +46,7 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             break
         case 5:
             print("QuranKiMisalainViewController\n", terminator: "")
-            self.openViewControllerBasedOnIdentifier("QuranKiMisalainID")
+            self.openViewControllerBasedOnIdentifier("CollapsibleTableViewController")
             break
         case 6:
             print("RabtaViewController\n", terminator: "")
