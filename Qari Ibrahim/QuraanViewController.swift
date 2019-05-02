@@ -19,24 +19,28 @@ class QuraanViewController: BaseViewController {
     @IBAction func BtnHadr(_ sender: Any) {
         let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "QuranTahqeeqViewControllerID") as! QuranTahqeeqViewController
         CategoryPageView.optionSelected = 4
+        CategoryPageView.controlerSelected = 1
         self.navigationController?.pushViewController(CategoryPageView, animated: true)
     }
     
     @IBAction func BtnTadweer(_ sender: Any) {
         let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "QuranTahqeeqViewControllerID") as! QuranTahqeeqViewController
         CategoryPageView.optionSelected = 3
+        CategoryPageView.controlerSelected = 1
         self.navigationController?.pushViewController(CategoryPageView, animated: true)
     }
     
     @IBAction func BtnTarteel(_ sender: Any) {
         let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "QuranTahqeeqViewControllerID") as! QuranTahqeeqViewController
         CategoryPageView.optionSelected = 2
+        CategoryPageView.controlerSelected = 1
         self.navigationController?.pushViewController(CategoryPageView, animated: true)
     }
     
     @IBAction func BtnTahqeeq(_ sender: Any) {
         let CategoryPageView = self.storyboard?.instantiateViewController(withIdentifier: "QuranTahqeeqViewControllerID") as! QuranTahqeeqViewController
              CategoryPageView.optionSelected = 1
+        CategoryPageView.controlerSelected = 1
         self.navigationController?.pushViewController(CategoryPageView, animated: true)
     }
     

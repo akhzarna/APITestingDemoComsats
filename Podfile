@@ -8,7 +8,8 @@ target 'Qari Ibrahim' do
   # Pods for Qari Ibrahim
    pod 'iOS-Slide-Menu'
    pod 'Alamofire', '~> 4.5'
-   
+   pod 'ImageSlideshow/SDWebImage'
+
   target 'Qari IbrahimTests' do
     inherit! :search_paths
     # Pods for testing

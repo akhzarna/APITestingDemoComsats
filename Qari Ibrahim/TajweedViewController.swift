@@ -16,13 +16,20 @@ class TajweedViewController: BaseViewController {
     @IBOutlet weak var TitleLbl: UITextView!
     
     @IBAction func BtnCourses(_ sender: Any) {
+        let QaidyPageView = self.storyboard?.instantiateViewController(withIdentifier: "QaidySubViewControllerID") as! QaidySubViewController
+        QaidyPageView.optionSelected = 2
+        self.navigationController?.pushViewController(QaidyPageView, animated: true)
     }
     
     @IBAction func BtnWorkshops(_ sender: Any) {
+        let QaidyPageView = self.storyboard?.instantiateViewController(withIdentifier: "QaidySubViewControllerID") as! QaidySubViewController
+        QaidyPageView.optionSelected = 3
+        self.navigationController?.pushViewController(QaidyPageView, animated: true)
     }
     
     @IBAction func BtnQaidy(_ sender: Any) {
-        let QaidyPageView = self.storyboard?.instantiateViewController(withIdentifier: "PublicationsViewControllerID") as! PublicationsViewController
+        let QaidyPageView = self.storyboard?.instantiateViewController(withIdentifier: "QaidySubViewControllerID") as! QaidySubViewController
+        QaidyPageView.optionSelected = 1
         self.navigationController?.pushViewController(QaidyPageView, animated: true)
     }
     
