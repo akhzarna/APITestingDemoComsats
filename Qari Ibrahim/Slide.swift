@@ -11,8 +11,8 @@ import UIKit
 class Slide: UIView {
 
     @IBOutlet weak var imageSlideMain: UIImageView!
-    @IBOutlet weak var textView: UITextView!
-        
+    @IBOutlet weak var txtTitle: UITextView!
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

@@ -22,7 +22,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        slides = createSlides()
+//        slides = createSlides()
         setupSlideScrollView(slides: slides)
         
 //        pageControl.numberOfPages = slides.count
@@ -35,36 +35,36 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
     
-    func createSlides() -> [Slide] {
-        
-        let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide1.imageSlideMain.image = UIImage(named: "ic_onboarding_1")
-        //slide1.labelTitle.text = "A real-life bear"
-        slide1.textView.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
-        
-        let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide2.imageSlideMain.image = UIImage(named: "ic_onboarding_2")
-        //slide2.labelTitle.text = "A real-life bear"
-        slide2.textView.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
-        
-        let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide3.imageSlideMain.image = UIImage(named: "ic_onboarding_3")
-        //slide3.labelTitle.text = "A real-life bear"
-        slide3.textView.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
-        
-        let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide4.imageSlideMain.image = UIImage(named: "ic_onboarding_4")
-        //slide4.labelTitle.text = "A real-life bear"
-        slide4.textView.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
-        
-        
-        let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide5.imageSlideMain.image = UIImage(named: "ic_onboarding_5")
-        //slide5.labelTitle.text = "A real-life bear"
-        slide5.textView.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
-        
-        return [slide1, slide2, slide3, slide4, slide5]
-    }
+//    func createSlides() -> [Slide] {
+//
+//        let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//        slide1.imageSlideMain.image = UIImage(named: "ic_onboarding_1")
+//        //slide1.labelTitle.text = "A real-life bear"
+//        slide1.textView.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+//
+//        let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//        slide2.imageSlideMain.image = UIImage(named: "ic_onboarding_2")
+//        //slide2.labelTitle.text = "A real-life bear"
+//        slide2.textView.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+//
+//        let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//        slide3.imageSlideMain.image = UIImage(named: "ic_onboarding_3")
+//        //slide3.labelTitle.text = "A real-life bear"
+//        slide3.textView.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+//
+//        let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//        slide4.imageSlideMain.image = UIImage(named: "ic_onboarding_4")
+//        //slide4.labelTitle.text = "A real-life bear"
+//        slide4.textView.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+//
+//
+//        let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+//        slide5.imageSlideMain.image = UIImage(named: "ic_onboarding_5")
+//        //slide5.labelTitle.text = "A real-life bear"
+//        slide5.textView.text = "Did you know that Winnie the chubby little cubby was based on a real, young bear in London"
+//
+//        return [slide1, slide2, slide3, slide4, slide5]
+//    }
     
     
     func setupSlideScrollView(slides : [Slide]) {
@@ -84,45 +84,37 @@ class ViewController: UIViewController, UIScrollViewDelegate {
      * when scrollview is scrolled, the below code needs to be called:
      * slideScrollView.delegate = self or
      */
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pageIndex = round(scrollView.contentOffset.x/view.frame.width)
         pageControl.currentPage = Int(pageIndex)
-        
         let maximumHorizontalOffset: CGFloat = scrollView.contentSize.width - scrollView.frame.width
         let currentHorizontalOffset: CGFloat = scrollView.contentOffset.x
-        
         // vertical
         let maximumVerticalOffset: CGFloat = scrollView.contentSize.height - scrollView.frame.height
         let currentVerticalOffset: CGFloat = scrollView.contentOffset.y
-        
         let percentageHorizontalOffset: CGFloat = currentHorizontalOffset / maximumHorizontalOffset
         let percentageVerticalOffset: CGFloat = currentVerticalOffset / maximumVerticalOffset
-        
         
         /*
          * below code changes the background color of view on paging the scrollview
          */
         //        self.scrollView(scrollView, didScrollToPercentageOffset: percentageHorizontalOffset)
         
-        
         /*
          * below code scales the imageview on paging the scrollview
          */
-        let percentOffset: CGPoint = CGPoint(x: percentageHorizontalOffset, y: percentageVerticalOffset)
         
+        let percentOffset: CGPoint = CGPoint(x: percentageHorizontalOffset, y: percentageVerticalOffset)
         if(percentOffset.x > 0 && percentOffset.x <= 0.25) {
-            
             slides[0].imageSlideMain.transform = CGAffineTransform(scaleX: (0.25-percentOffset.x)/0.25, y: (0.25-percentOffset.x)/0.25)
             slides[1].imageSlideMain.transform = CGAffineTransform(scaleX: percentOffset.x/0.25, y: percentOffset.x/0.25)
-            
         } else if(percentOffset.x > 0.25 && percentOffset.x <= 0.50) {
             slides[1].imageSlideMain.transform = CGAffineTransform(scaleX: (0.50-percentOffset.x)/0.25, y: (0.50-percentOffset.x)/0.25)
             slides[2].imageSlideMain.transform = CGAffineTransform(scaleX: percentOffset.x/0.50, y: percentOffset.x/0.50)
-            
         } else if(percentOffset.x > 0.50 && percentOffset.x <= 0.75) {
             slides[2].imageSlideMain.transform = CGAffineTransform(scaleX: (0.75-percentOffset.x)/0.25, y: (0.75-percentOffset.x)/0.25)
             slides[3].imageSlideMain.transform = CGAffineTransform(scaleX: percentOffset.x/0.75, y: percentOffset.x/0.75)
-            
         } else if(percentOffset.x > 0.75 && percentOffset.x <= 1) {
             slides[3].imageSlideMain.transform = CGAffineTransform(scaleX: (1-percentOffset.x)/0.25, y: (1-percentOffset.x)/0.25)
             slides[4].imageSlideMain.transform = CGAffineTransform(scaleX: percentOffset.x, y: percentOffset.x)

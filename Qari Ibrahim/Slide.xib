@@ -16,36 +16,35 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="daQ-7f-Nia">
-                    <rect key="frame" x="67" y="80" width="240" height="128"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="240" id="BAR-r5-u3u"/>
-                        <constraint firstAttribute="height" constant="128" id="Inw-ie-28y"/>
-                    </constraints>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="daQ-7f-Nia">
+                    <rect key="frame" x="0.0" y="95" width="375" height="300"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </imageView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2gE-LG-eFK">
-                    <rect key="frame" x="16" y="248" width="343" height="399"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="24p-JG-rRk">
+                    <rect key="frame" x="0.0" y="399" width="375" height="268"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="268" id="f7W-q7-OM1"/>
+                    </constraints>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="2gE-LG-eFK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="5o7-du-BnG"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="daQ-7f-Nia" secondAttribute="trailing" constant="68" id="F4E-09-cfA"/>
-                <constraint firstItem="2gE-LG-eFK" firstAttribute="top" secondItem="daQ-7f-Nia" secondAttribute="bottom" constant="40" id="R7l-sP-fzM"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2gE-LG-eFK" secondAttribute="trailing" constant="16" id="ZvH-Fe-fya"/>
-                <constraint firstItem="2gE-LG-eFK" firstAttribute="top" secondItem="daQ-7f-Nia" secondAttribute="bottom" constant="40" id="hmo-vp-xIr"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2gE-LG-eFK" secondAttribute="bottom" constant="20" id="uUL-KB-xxg"/>
-                <constraint firstItem="daQ-7f-Nia" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="67" id="vxw-az-eZx"/>
-                <constraint firstItem="daQ-7f-Nia" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="zvr-GR-R8r"/>
+                <constraint firstItem="daQ-7f-Nia" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1Ay-Jg-jXS"/>
+                <constraint firstAttribute="bottom" secondItem="24p-JG-rRk" secondAttribute="bottom" id="AgO-gI-RaA"/>
+                <constraint firstAttribute="trailing" secondItem="24p-JG-rRk" secondAttribute="trailing" id="Pny-xa-tRK"/>
+                <constraint firstItem="24p-JG-rRk" firstAttribute="top" secondItem="daQ-7f-Nia" secondAttribute="bottom" constant="4" id="WkF-0D-KB9"/>
+                <constraint firstItem="daQ-7f-Nia" firstAttribute="top" secondItem="bjs-s5-6cW" secondAttribute="top" constant="75" id="egN-sN-Xfo"/>
+                <constraint firstAttribute="trailing" secondItem="daQ-7f-Nia" secondAttribute="trailing" id="j3l-CB-5Oa"/>
+                <constraint firstItem="24p-JG-rRk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ryy-b9-Gnv"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <viewLayoutGuide key="safeArea" id="bjs-s5-6cW"/>
             <connections>
                 <outlet property="imageSlideMain" destination="daQ-7f-Nia" id="CF5-QZ-lJS"/>
-                <outlet property="textView" destination="2gE-LG-eFK" id="DHo-RF-agA"/>
+                <outlet property="txtTitle" destination="24p-JG-rRk" id="4dr-kx-ZbU"/>
             </connections>
             <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
         </view>

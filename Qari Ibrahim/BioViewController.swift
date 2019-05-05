@@ -8,9 +8,9 @@
 
 import UIKit
 import Alamofire
+import SDWebImage
 
 class BioViewController: BaseViewController, UIScrollViewDelegate {
-
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var BioTitleLbl: UILabel!
     var myApiArray = [BioScreen]()
@@ -19,19 +19,13 @@ class BioViewController: BaseViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        
         scrollView.delegate = self
-//        slides = createSlides()
+       // slides = createSlides()
 //        setupSlideScrollView(slides: slides)
-        
         var todoEndpoint : String = ""
         //API calling
-        
-       
         todoEndpoint = "http://channelsmedia.net/quranapp/api/bio"
-        
         Alamofire.request(todoEndpoint)
             .responseJSON { response in
                 // check for errors
@@ -47,10 +41,8 @@ class BioViewController: BaseViewController, UIScrollViewDelegate {
                     print(response.result.error!)
                     return
                 }
-
                 self.slides = self.createSlides(apiArray: self.myApiArray)
                 self.setupSlideScrollView(slides: self.slides)
-
         }
         
         guard let customFont = UIFont(name: "Gotham Rounded", size: UIFont.labelFontSize) else {
@@ -63,28 +55,24 @@ class BioViewController: BaseViewController, UIScrollViewDelegate {
     }
     
     func setupSlideScrollView(slides : [Slide]) {
-        scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
-        scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: view.frame.height)
+        // scrollView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+        scrollView.contentSize = CGSize(width: view.frame.width * CGFloat(slides.count), height: scrollView.frame.height)
         scrollView.isPagingEnabled = true
-        
         for i in 0 ..< slides.count {
-            slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: view.frame.width, height: view.frame.height)
+            slides[i].frame = CGRect(x: view.frame.width * CGFloat(i), y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
             scrollView.addSubview(slides[i])
         }
     }
     
     func createSlides(apiArray:[BioScreen]) -> [Slide] {
-        
         for i in 0 ..< apiArray.count {
             let slide:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-            slide.imageSlideMain.image = UIImage(named: "ic_quran")
-            //slide1.labelTitle.text = "A real-life bear"
-            slide.textView.text = self.myApiArray[i].title
+            slide.imageSlideMain.sd_setImage(with: URL(string:"http://channelsmedia.net/quranapp/public/" + self.myApiArray[i].image), placeholderImage: UIImage(named: "ic_quran"))
+            slide.txtTitle.text = self.myApiArray[i].title
             slideDataSource.append(slide)
         }
         
         return slideDataSource
-        
     }
     
     /*

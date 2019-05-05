@@ -18,12 +18,10 @@ class QaidySubViewController: UIViewController, UITableViewDelegate, UITableView
     var optionSelected = 0
     var myApiArray = [Any]()
     var objArray = [AnyObject]()
-    @IBOutlet weak var publicationtextLbl: UILabel!
     
-    @IBOutlet weak var audioViewContainer: UIView!
-    @IBOutlet weak var videoViewContainer: UIView!
-    @IBOutlet weak var publicationViewContainer: UIView!
-    
+    @IBOutlet weak var viewPublicationThird: UIView!
+    @IBOutlet weak var viewVideoSecond: UIView!
+    @IBOutlet weak var ViewAudioFirst: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,16 +58,12 @@ class QaidySubViewController: UIViewController, UITableViewDelegate, UITableView
                     print(response.result.error!)
                     return
                 }
-                
-                // make sure we got some JSON since that's what we expect
-                //                guard let json = response.result.value as? [String: Any] else {
-                //                    print("didn't get todo object as JSON from API")
-                //                    print("Error: \(response.result.error)")
-                //                    return
-                //                }
-                
-                //print(json)
+               
         }
+        
+        self.ViewAudioFirst.layer.cornerRadius = 20.0
+        self.viewVideoSecond.layer.cornerRadius = 20.0
+        self.viewPublicationThird.layer.cornerRadius = 20.0
     }
     
 

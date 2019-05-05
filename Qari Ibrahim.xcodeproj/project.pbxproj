@@ -13,6 +13,11 @@
 		7B0100E9225B46D80097AE47 /* AskQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0100E8225B46D80097AE47 /* AskQuestionViewController.swift */; };
 		7B0100EB225B826A0097AE47 /* RequestClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0100EA225B826A0097AE47 /* RequestClassViewController.swift */; };
 		7B0100ED225B8AEE0097AE47 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0100EC225B8AEE0097AE47 /* SettingViewController.swift */; };
+		7B03C32C227987FA002050A4 /* CollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B03C327227987F9002050A4 /* CollapsibleTableViewCell.swift */; };
+		7B03C32D227987FA002050A4 /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B03C328227987F9002050A4 /* ExampleData.swift */; };
+		7B03C32E227987FA002050A4 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B03C329227987F9002050A4 /* CollapsibleTableViewHeader.swift */; };
+		7B03C32F227987FA002050A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B03C32A227987F9002050A4 /* Extensions.swift */; };
+		7B03C330227987FA002050A4 /* CollapsibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B03C32B227987FA002050A4 /* CollapsibleTableViewController.swift */; };
 		7B155D722275F275002E8790 /* PublicationPDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B155D712275F274002E8790 /* PublicationPDF.swift */; };
 		7B186560227049B400444390 /* QiraatListingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B18655F227049B400444390 /* QiraatListingResponse.swift */; };
 		7B1865622270776300444390 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1865612270776300444390 /* Slide.swift */; };
@@ -94,6 +99,11 @@
 		7B0100E8225B46D80097AE47 /* AskQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskQuestionViewController.swift; sourceTree = "<group>"; };
 		7B0100EA225B826A0097AE47 /* RequestClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestClassViewController.swift; sourceTree = "<group>"; };
 		7B0100EC225B8AEE0097AE47 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		7B03C327227987F9002050A4 /* CollapsibleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewCell.swift; sourceTree = "<group>"; };
+		7B03C328227987F9002050A4 /* ExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
+		7B03C329227987F9002050A4 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		7B03C32A227987F9002050A4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7B03C32B227987FA002050A4 /* CollapsibleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewController.swift; sourceTree = "<group>"; };
 		7B155D712275F274002E8790 /* PublicationPDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicationPDF.swift; sourceTree = "<group>"; };
 		7B18655F227049B400444390 /* QiraatListingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiraatListingResponse.swift; sourceTree = "<group>"; };
 		7B1865612270776300444390 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
@@ -279,6 +289,12 @@
 				7B397BEC226F425500A53B44 /* QaidyVideoTableViewCell.swift */,
 				7B397BEE226F429700A53B44 /* QaidyPublicationTableViewCell.swift */,
 				7B397BF0226F5E5900A53B44 /* PdfReaderViewController.swift */,
+				7B03C327227987F9002050A4 /* CollapsibleTableViewCell.swift */,
+				7B03C32B227987FA002050A4 /* CollapsibleTableViewController.swift */,
+				7B03C329227987F9002050A4 /* CollapsibleTableViewHeader.swift */,
+				7B03C328227987F9002050A4 /* ExampleData.swift */,
+				7B03C32A227987F9002050A4 /* Extensions.swift */,
+				7B186563227077AC00444390 /* Slide.xib */,
 			);
 			path = "Qari Ibrahim";
 			sourceTree = "<group>";
@@ -562,11 +578,13 @@
 				7BA6B96C226857B10079F1B0 /* QuranAudioTableViewCell.swift in Sources */,
 				7B59CCB42254D264000E2BCF /* QaidyViewController.swift in Sources */,
 				7B397BE7226F25E400A53B44 /* PublicationQaidyTableViewCell.swift in Sources */,
+				7B03C330227987FA002050A4 /* CollapsibleTableViewController.swift in Sources */,
 				7B155D722275F275002E8790 /* PublicationPDF.swift in Sources */,
 				7BE4F93F2254A7F70039382C /* PublicationBooksViewController.swift in Sources */,
 				7B0100ED225B8AEE0097AE47 /* SettingViewController.swift in Sources */,
 				7B59CCBE22562A22000E2BCF /* BooksPublicationViewController.swift in Sources */,
 				7BDE17CA225CA6DA00BDD6DF /* MenuViewController.swift in Sources */,
+				7B03C32D227987FA002050A4 /* ExampleData.swift in Sources */,
 				7B186560227049B400444390 /* QiraatListingResponse.swift in Sources */,
 				7B59CCBA2255070D000E2BCF /* AboutUsViewController.swift in Sources */,
 				7BDE17C8225C910A00BDD6DF /* SearchTableViewCell.swift in Sources */,
@@ -575,6 +593,7 @@
 				7B397BF1226F5E5900A53B44 /* PdfReaderViewController.swift in Sources */,
 				7B59CCBC225616F1000E2BCF /* PlayerViewController.swift in Sources */,
 				7B0100EB225B826A0097AE47 /* RequestClassViewController.swift in Sources */,
+				7B03C32F227987FA002050A4 /* Extensions.swift in Sources */,
 				7B1865622270776300444390 /* Slide.swift in Sources */,
 				7B397BEF226F429700A53B44 /* QaidyPublicationTableViewCell.swift in Sources */,
 				7B1865682270A18F00444390 /* BioScreen.swift in Sources */,
@@ -591,6 +610,8 @@
 				7B59CCC022563ECA000E2BCF /* TasbeehViewController.swift in Sources */,
 				7B397BEB226F410200A53B44 /* QaidyAudioTableViewCell.swift in Sources */,
 				7B8E25A12263755800526559 /* ShareViewController.swift in Sources */,
+				7B03C32C227987FA002050A4 /* CollapsibleTableViewCell.swift in Sources */,
+				7B03C32E227987FA002050A4 /* CollapsibleTableViewHeader.swift in Sources */,
 				7BE4F91E2253A0010039382C /* TajweedViewController.swift in Sources */,
 				7B397BE5226F245200A53B44 /* PublicationBooksTableViewCell.swift in Sources */,
 				7B0100E7225B3E140097AE47 /* LiveClassViewController.swift in Sources */,

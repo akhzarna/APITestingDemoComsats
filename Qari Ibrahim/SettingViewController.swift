@@ -8,16 +8,17 @@
 
 import UIKit
 
+
 class SettingViewController: BaseViewController {
 
+    @IBOutlet weak var tblSetting: UITableView!
     @IBOutlet weak var TitleLbl: UILabel!
     
     @IBOutlet weak var firstInputView: UIView!
-    @IBOutlet weak var UsernameTextinputField: UITextField!
-   
     @IBOutlet weak var secondInputView: UIView!
-    
     @IBOutlet weak var thirdView: UIView!
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
