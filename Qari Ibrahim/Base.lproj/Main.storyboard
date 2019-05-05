@@ -3149,49 +3149,6 @@
             </objects>
             <point key="canvasLocation" x="7443.4782608695659" y="356.91964285714283"/>
         </scene>
-        <!--Bio View Controller-->
-        <scene sceneID="Tzp-4I-jvm">
-            <objects>
-                <viewController storyboardIdentifier="BioViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9iu-eR-H1B" customClass="BioViewController" customModule="Qari_Ibrahim" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Mci-nV-DBR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="XBd-F5-N1J">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvO-E1-DCK">
-                                <rect key="frame" x="182.5" y="82" width="49.5" height="43"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" red="0.17254901959999999" green="0.3921568627" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbg-XV-9ki">
-                                <rect key="frame" x="0.0" y="145" width="414" height="751"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Cbg-XV-9ki" firstAttribute="leading" secondItem="Mci-nV-DBR" secondAttribute="leading" id="1ed-YI-7GM"/>
-                            <constraint firstAttribute="trailing" secondItem="Cbg-XV-9ki" secondAttribute="trailing" id="1nd-cq-PdK"/>
-                            <constraint firstItem="zvO-E1-DCK" firstAttribute="top" secondItem="XtK-O7-wck" secondAttribute="top" constant="38" id="9ha-WS-Ycy"/>
-                            <constraint firstItem="Cbg-XV-9ki" firstAttribute="top" secondItem="zvO-E1-DCK" secondAttribute="bottom" constant="20" id="dFj-WF-dQp"/>
-                            <constraint firstAttribute="bottom" secondItem="Cbg-XV-9ki" secondAttribute="bottom" id="k0u-zK-Lol"/>
-                            <constraint firstItem="zvO-E1-DCK" firstAttribute="centerX" secondItem="Mci-nV-DBR" secondAttribute="centerX" id="xVn-zU-BIr"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="XtK-O7-wck"/>
-                    </view>
-                    <connections>
-                        <outlet property="BioTitleLbl" destination="zvO-E1-DCK" id="RSU-qA-D38"/>
-                        <outlet property="scrollView" destination="Cbg-XV-9ki" id="19Q-ST-10h"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wvW-Zh-cRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8110.1449275362329" y="360.9375"/>
-        </scene>
         <!--Ask Question View Controller-->
         <scene sceneID="QLk-R2-ugS">
             <objects>
@@ -3736,14 +3693,14 @@
         <image name="iv_map" width="191.75999450683594" height="141.1199951171875"/>
         <image name="iv_online_class" width="44.159999847412109" height="44.159999847412109"/>
         <image name="iv_publications" width="44.159999847412109" height="44.159999847412109"/>
-        <image name="iv_qauraan" width="44.159999847412109" height="44.159999847412109"/>
+        <image name="iv_qauraan" width="29.280000686645508" height="29.280000686645508"/>
         <image name="iv_qiraat" width="44.159999847412109" height="44.159999847412109"/>
         <image name="iv_tajweed" width="44.159999847412109" height="44.159999847412109"/>
         <image name="iv_tasbeeh" width="44.159999847412109" height="44.159999847412109"/>
         <image name="lang_eng" width="77.279998779296875" height="77.279998779296875"/>
         <image name="lang_urdu" width="77.279998779296875" height="77.279998779296875"/>
-        <image name="play" width="48" height="48"/>
-        <image name="play-next" width="48" height="48"/>
+        <image name="play" width="15.75" height="15.75"/>
+        <image name="play-next" width="15.75" height="15.75"/>
         <image name="videoBackground" width="865" height="135"/>
     </resources>
 </document>
